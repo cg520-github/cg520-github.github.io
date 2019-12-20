@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 编码 -->
+		<meta charset="utf-8" />
+		<!-- 标题 -->
+		<title>用户登录-国美(GOME)</title>
+		<!-- 缓存 -->
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<!-- 描述 -->
+		<meta name="description" content="国美(Gome.com.cn)国美电器唯一官方网上商城，中国领先的专业家电网购平台.全球品牌电视、洗衣机、电脑、手机、数码、空调、电脑配件、生活电器、网络产品等正品行货，更低价格，更快送达，为您提供便捷、诚信的服务.">
+		<!-- 关键字 -->
+		<meta name="Keywords" content="国美,国美在线,国美电器,国美官方旗舰店,国美电器网上商城,电视,洗衣机,电脑,手机,数码,空调,电脑配件,生活电器">
+		<!-- 渲染引擎 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE">
+		<!-- 标题log -->
+		<link rel="shortcut icon" href="../img/icon/favicon.ico" type="image/x-icon">
+		<!-- 样式 -->
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public2.css" />
+		<link rel="stylesheet" type="text/css" href="../css/login.css" />
+		<!-- js -->
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/login.js" type="text/javascript" charset="utf-8" defer="defer"></script>
+	</head>
+	<body>
+		<div class="warp">
+			<!-- 头部 -->
+			<div class="head wbox clearContent">
+				<div class="logo">
+					<a href="../index.html">
+						<h1>国美</h1>
+					</a>
+				</div>
+				<a href="#" target="_blank" class="survey">
+					<i class="icon"></i>我想对“登录”提意见
+				</a>
+			</div>
+			<!-- 提示 -->
+			<div class="policyTitleBox">
+				<div class="policyTitle wbox">
+					<p class="wbox">
+						<em></em>
+						依据《网络安全法》，为保障您的账户安全和正常使用，请尽快完成手机号验证！新版
+						<a href="#" target="_blank">《国美隐私政策》</a>
+						已上线，将更有利于保护您的个人隐私。
+					</p>
+				</div>
+			</div>
+			
+			<!-- 内容 -->
+			<div class="content">
+				<div class="main wbox">
+					<div class="loginBox">
+						<div class="loginHead clearContent">
+								<a href="javascript:void(0)" class="cur leftBtn">扫码登录</a>
+								<a href="javascript:void(0)" class="rightBtn">账户登录</a>
+						</div>
+						<div class="loginMain">
+							<div class="login codeLogin show" id="codeLogin">
+								<div class="state">
+									<div class="qrcode clearContent">
+										<div class="qrcodeImage">
+											<img src="../img/no/getQrcode.no">
+										</div>
+										<div class="qrcodeHelp"></div>
+									</div>
+									<div class="rightState">
+										<div class="rightbg"></div>
+										<p class="rightTitle">扫描成功！</p>
+										<p class="rightHint">请按手机的提示操作，请勿刷新本页面！</p>
+									</div>
+									<div class="error Refresh">
+										<div class="errorState">
+											<p class="errorTitle">二维码已失效</p>
+											<a href="javascript:;">点击刷新</a>
+										</div>
+										<div class="keepOut"></div>
+									</div>
+									<div class="error comeToNothing">
+										<div class="errorState">
+											<p class="errorTitle">登录失败</p>
+											<a href="javascript:;">刷新</a>
+										</div>
+										<div class="keepOut"></div>
+									</div>
+								</div>
+								<p class="desc">
+									打开手机
+									<a href="#" class="blink" target="_blank" title="国美">国美</a>
+								</p>
+								<p class="smCode">扫一扫登录</p>
+								<a href="register.html" target="_blank" title="免费注册" class="registerBtn">免费注册</a>
+							</div>
+							
+							<div class="login userLogin" id="userLogin">
+								<div class="userLoginMethod userLogins">
+									<div class="errTip">
+										<i class="icon"></i>
+										<div>
+											<p>
+												<b class="text">账号或密码不匹配，请重新输入</b>
+											</p>
+										</div>
+									</div>
+									
+									<div class="loginItem loginItemUserName">
+										<a href="javascript:;" class="clearBtn"></a>
+										<span class="dafaultPlaceholder">
+											手机号码
+											<em>&#47;</em>
+											用户名
+											<em>&#47;</em>
+											邮箱
+											<em>&#47;</em>
+											门店会员卡号
+										</span>
+										<input type="text" name="loginUserName" id="loginUserName" value="" class="text "/>
+									</div>
+									<div class="loginItem loginItemUserpwd">
+										<a href="javascript:;" class="clearBtn"></a>
+										<span class="dafaultPlaceholder">
+											密码
+										</span>
+										<input type="text" name="loginpwd" id="loginpwd" value="" class="text "/>
+									</div>
+									<div class="remember clearContent">
+										<div class="fl left">
+											<input type="checkbox" name="autoLogin" id="autoLogin" value="autoLogin"  class="autoLogin"/>
+											<label for="autoLogin">自动登录</label>
+										</div>
+										<div class="fr right">
+											<a href="passwordReset.html" target="_blank" id="passwordReset" class="passwordReset" title="忘记密码">忘记密码</a>
+											<span class="segmentation">|</span>
+											<a  href="register.html" target="_blank" title="免费注册" class="registerLink">免费注册</a>
+										</div>
+									</div>
+									<div class="actions">
+										<input type="button" value="登录" class="btnLogin">
+									</div>
+									
+								</div>
+								<div class="userLoginMethod hide phoneNums">
+									<div class="loginItem phoneNum">
+										<span class="dafaultPlaceholder">
+											请输入手机号(支持门店预留手机)
+										</span>
+										<input type="text" name="phoneNum" id="phoneNum" value="" class="text"/>
+									</div>
+									<div class="loginItem verifyCodeDiv">
+										<span class="dafaultPlaceholder">
+											短信验证码
+										</span>
+										<input type="text" name="msgCode" id="msgCode" value="" class="text"/>
+										<div class="check">
+											<a href="javascript:;" class="checkPhineCode">获取短信验证码</a>
+											<a href="javascript:;" class="checkPhineCode" style="display: none;">
+												<em id="time">60</em>秒后重新获取
+											</a>
+											<a href="javascript:;" class="checkPhineCode" style="display: none;">重新获取验证码</a>
+										</div>
+									</div>
+									<div class="remember clearContent">
+										<div class="fl left">
+											<input type="checkbox" name="autoLogin" id="autoLogin" value="autoLogin"  class="autoLogin"/>
+											<label for="autoLogin">自动登录</label>
+										</div>
+									</div>
+									<p class="detailContent">
+										未注册的手机号将自动注册，且代表您同意<a href="javascript:;" class="fontBlink">《服务协议》</a>
+									</p>
+									<div class="actions">
+										<input type="button" value="登录" class="btnLogin">
+									</div>
+								</div>
+								<p class="userLoginway">
+									<a href="javascript:;" class="switchoverLoginBtn">手机号快速登录(支持门店预留手机)</a>
+									<a href="javascript:;" class="switchoverLoginBtn hide">账号密码登录</a>
+								</p>
+							</div>
+							
+							
+						</div>
+						
+						<ul class="restsLogin">
+							<li class="play clearContent">
+								<a href="loginStore.html" class="loginStore" title="门店会员卡登录">门店会员卡登录</a>
+								<a href="#" class="restsqq" title="QQ">QQ</a>
+								<a href="#" class="restsweixin" title="微信">微信</a>
+								<a href="#" class="restsweibo" title="微博">微博</a>
+								<a href="#" class="restsmeifubao" title="美付宝">美付宝</a>
+								<a href="#" class="restsjixin hide down" title="极信通">极信通</a>
+								<a href="#" class="restsalipay hide down" title="支付宝">支付宝</a>
+							</li>
+							<li>
+								<a href="#" class="more"></a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer">
+				<div class="footBox wbox">
+					<ul class="footListZdy">
+						<li>
+							<a  href="#" target="_blank">国美控股集团</a>
+						</li>
+						<li>
+							<a  href="#" target="_blank">国美管家</a>
+						</li>
+						<li>
+							<a  href="#" target="_blank">关于集团</a>
+						</li>
+					</ul>
+					
+					<p>
+						本公司游戏产品适合18岁以上成年人使用&nbsp;&nbsp;违法和不良信息举报电话：021-39900132&nbsp;&nbsp;
+						<a class="interDrug" href="#" target="_blank">互联网药品信息服务资格证编号（沪）-经营性-2019-0006</a>
+					</p>
+					<p>
+						网络食品销售第三方平台提供者备案：沪网食备A0015号&nbsp;&nbsp;
+						<a class="interDrug" href="#" target="_blank">网络文化经营许可证沪网文[2017]5537-436号</a>&nbsp;&nbsp;
+						<a class="interDrug" href="#" target="_blank">增值电信业务经营许可证</a>
+					</p>
+					<p>
+						客服电话:4008113333&nbsp;&nbsp;
+						<a class="interDrug" href="#" target="_blank">沪ICP备11009419号/京ICP备 19011786号</a>&nbsp;&nbsp;
+						<a class="interDrug" href="#" target="_blank">京B2-20191290</a>&nbsp;&nbsp;
+						<a class="interDrug" href="//www.gome.com.cn/companyinfo/" target="_blank">经营执照</a>
+						&nbsp;&nbsp;<a class="interDrug" href="#" target="_blank">营业执照</a>&nbsp;&nbsp;
+						<a class="interDrug" href="#" target="_blank">出版物经营许可证</a>
+					</p>
+					<p>
+						©2000-2019&nbsp;&nbsp;国美在线电子商务有限公司版权所有&nbsp;&nbsp;
+						<a class="interDrug tw-w-ico-wrap" href="#" target="_blank">
+							<i class="tw-w-mark-icon"></i>京公网安备 11010502038379号
+						</a>
+					</p>
+					<div class="footCreait">
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

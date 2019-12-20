@@ -1,0 +1,2058 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 编码 -->
+		<meta charset="utf-8" />
+		<!-- 标题 -->
+		<title>商品详情页</title>
+		<!-- 缓存 -->
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<!-- 描述 -->
+		<meta name="description" content="国美(Gome.com.cn)国美电器唯一官方网上商城，中国领先的专业家电网购平台.全球品牌电视、洗衣机、电脑、手机、数码、空调、电脑配件、生活电器、网络产品等正品行货，更低价格，更快送达，为您提供便捷、诚信的服务.">
+		<!-- 关键字 -->
+		<meta name="Keyword~s" content="国美,国美在线,国美电器,国美官方旗舰店,国美电器网上商城,电视,洗衣机,电脑,手机,数码,空调,电脑配件,生活电器">
+		<!-- 渲染引擎 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE">
+		<!-- 标题log -->
+		<link rel="shortcut icon" href="../img/icon/favicon.ico" type="image/x-icon">
+		<!-- 样式 -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/details.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<!-- js -->
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+		<script src="../js/data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/city-picker.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/storage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/details.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="warp">
+			<!-- 头部 -->
+			<div class="header">
+
+				<div class="nav">
+					<div class="content wbox">
+						<ul class="leftList">
+							<li class="gomeiUser">
+								<b class="loginDivName">
+									<a href="login.html" target="_blank">国美会员</a>
+									<i></i>
+								</b>
+							</li>
+							<li class="loginDivLink">
+								<a rel="loginLink" href="login.html">登录</a>
+
+							</li>
+							<li class="registerDivLink">
+								<a class="registerLink" href="register.html">注册有礼<i></i></a>
+							</li>
+						</ul>
+
+						<ul class="rightList">
+							<li class="orderGoods">
+								<a href="login.html">我的订单</a>
+							</li>
+							<li class="myGome">
+								<b>
+									<a href="login.html" target="_blank">我的国美</a>
+									<i></i>
+								</b>
+
+							</li>
+							<li class="enterpriseProcurement">
+								<b>
+									<a href="login.html" target="_blank">企业采购</a>
+									<i></i>
+								</b>
+								<div class="dropdown">
+									<a class="qrcode"></a>
+								</div>
+							</li>
+							<li class="serviceCentre">
+								<b>
+									<em class="icon">&#xe638;</em>
+									<a href="login.html" target="_blank">服务中心</a>
+									<i></i>
+								</b>
+							</li>
+							<li class="siteMap">
+								<b>
+									<a href="login.html" target="_blank">网站导航</a>
+									<i></i>
+								</b>
+							</li>
+							<li class="phoneGome">
+								<b>
+									<em class="icon">&#xe637;</em>
+									<a href="login.html" target="_blank">手机国美</a>
+									<i></i>
+								</b>
+								<div class="dropdown">
+									<a class="qrcode"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+
+				<!-- head -->
+				<div class="head wbox clearContent">
+					<!-- logo -->
+					<div class="logo">
+						<a href="../index.html" target="_self">
+							<h1></h1>
+						</a>
+					</div>
+
+					<!-- search -->
+					<div class="search">
+						<div class="searchBox">
+							<div class="searchDropdown">
+								<div class="searchType">
+									<span class="selected">商品</span>
+									<i></i>
+								</div>
+								<ul class="searchTypeList"></ul>
+							</div>
+							<label id="keyLabel" class="keyLabel" default="彩电,1;热水器,1;冰箱,1;手机,1;洗衣机,1">洗衣机</label>
+							<input type="text" autocomplete="off" name="searchInput" class="searchInput" autocomplete='off' />
+							<button type="button" class="searchBtn">搜索</button>
+							<a href="micro.html">
+								<div class="voice">
+									<img src="../img/png/voice.png">
+								</div>
+							</a>
+						</div>
+						<div class="searchHotWord">
+							<a href="#" class="searchHotMark">领50元券</a>
+							<a href="#">领50元券</a>
+							<a href="#">领50元券</a>
+							<a href="#">领50元券</a>
+							<a href="#">领50元券</a>
+							<a href="#">领50元券</a>
+							<a href="#">领50元券</a>
+							<a href="#">领50元券</a>
+						</div>
+						<div class="searchTpis">
+							<ul class="searchTpisList clearContent">
+								<!-- <li class="J-history-item">
+									<a class="hisakeycookieword" href="javascript:void(0);" type="1" word="冰箱">
+										<span class="fl">冰箱</span> <span class="fr color-b his_txt" style="display:block">搜索历史</span>
+										<span class="fr color-b his_del" style="display:none">删除</span>
+									</a>
+								</li> -->
+							</ul>
+							<div class="closeSearch">
+								<span>关闭</span>
+							</div>
+							<div class="closeSearch deleteSearch">
+								<span>全部删除</span>
+							</div>
+						</div>
+					</div>
+
+					<div class="side">
+						<ul class="sideMeunList clearContent">
+							<li class="shopingCar">
+								<span class="carBox">
+									<a href="#" class="menuLink carLink">
+										<em class="carIconBox">
+											<span class="carnum">
+												<span class="carQuantity">0</span>
+												<i></i>
+											</span>
+										</em>
+										<span class="carText">我的购物车</span>
+										<b></b>
+									</a>
+								</span>
+								<div class="carDropdownMenu">
+									<div class="noshop">
+										<a href="#" title="去购物车">购物车</a>中还没有商品，赶紧选购吧！
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="contain">
+				<div class="category">
+					<div class="categoryBox wbox">
+						<div class="sidecategory">
+							<h2 class="hover">
+								<span></span>
+								<a href="#" target="_blank">全部商品分类</a>
+							</h2>
+							<div class="lisNav">
+								<div class="lisBg"></div>
+								<ul class="lisnavUl"></ul>
+								<div class="subNav">
+									<div class="sync">
+										<div class="syncItemBox">
+											<div class="syncItemLeft"></div>
+											<div class="syncItemRight">
+												<div class="brandBox"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<ul class="mainnav">
+							<li>
+								<a href="#" target="_blank">
+									<span>首页</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<span>发现</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<span>真划算</span>
+								</a>
+								<span class="tag_line"></span>
+							</li>
+
+							<li>
+								<a href="#" target="_blank">
+									<span>超市</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<span>电器城</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<span>汽车</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<span>家居家装</span>
+									<span class="tag_line"></span>
+								</a>
+							</li>
+
+							<li>
+								<a href="#" target="_blank">
+									<span>智能</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<span>管家</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">
+									<span>金融</span>
+								</a>
+							</li>
+						</ul>
+
+					</div>
+				</div>
+
+				<div class="wrapper">
+					<div class="container wbox">
+						<div class="left">
+							<ul>
+								<li>
+									<a href="">首页</a>
+								</li>
+								<li>
+									<a title="家具">家具</a>
+									<i class="crumbs"></i>
+								</li>
+								<li>
+									<a title="沙发/床类">沙发/床类</a>
+								</li>
+							</ul>
+						</div>
+						<div class="right">
+							<div class="stores">
+								<a href="javascript:;" class="btncollect">
+									<i class="collectIcon"></i>
+									<span>收藏店铺</span>
+									<i class="collectIconArrow"></i>
+								</a>
+								<a href="javascript:;" class="service">
+									<i></i>
+									在线客服
+								</a>
+								<span class="serviceScore">
+									<b class="stargGray">
+										<i class="starRed"></i>
+									</b>
+									<em class="score">4.5</em>分
+								</span>
+								<a href="#" class="name">8H家具旗舰店</a>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container wbox clearContent">
+					<div class="firstscreenLeft">
+						<div class="magnifier">
+							<div class="big">
+								<div class="jqzoom">
+									<img src="">
+									<a href="" class="jqzoomIconBtn"></a>
+									<div class="jqzoomPup"></div>
+
+								</div>
+								<div class="zoomdiv">
+									<img src="">
+								</div>
+							</div>
+							<div class="list">
+								<div class="btn">
+									<a href="javascript:;" class="prve">
+										<b>
+											<s></s>
+										</b>
+									</a>
+									<a href="javascript:;" class="next">
+										<b>
+											<s></s>
+										</b>
+									</a>
+								</div>
+								<div class="clearContent small">
+									<ul>
+										<li>
+											<a href="javascript:;">
+												<img src="../img/jpg/jqzoom.jpg">
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<img src="../img/jpg/jqzoom.jpg">
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<img src="../img/jpg/jqzoom.jpg">
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<img src="../img/jpg/jqzoom.jpg">
+											</a>
+										</li>
+										<li>
+											<a href="javascript:;">
+												<img src="../img/jpg/jqzoom.jpg">
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="toolbar clearContent">
+							<span class="productNumber">商品编号：8013006652</span>
+							<a class="collect" href="javascript:;">
+								<i></i>
+								收藏
+							</a>
+							<a class="showWish" href="javascript:;">
+								<i></i>
+								提心愿
+							</a>
+							<a class="shareGold" href="javascript:;">
+								<i></i>
+								提心愿
+							</a>
+						</div>
+					</div>
+					<div class="firstscreenCenter">
+						<div class="hgroup">
+							<h1></h1>
+							<h4></h4>
+							<div class="sharDB">
+								<span>对比</span>
+							</div>
+						</div>
+						<div class="atmosphere">
+							<div class="figure">
+								<div class="zBargain">
+									<i class="ztime"></i>
+									<span>国美团购</span>
+									<p>
+										<b>60</b>人已购，距离结束还有<em>03</em>天<em>03</em>时
+									</p>
+								</div>
+								<img src="../img/png/figure.png">
+							</div>
+							<div class="right">
+								<div class="countDown">a</div>
+								<span class="endtimeTip">a</span>
+							</div>
+						</div>
+						<div class="entrance">
+							<div class="left">
+								<span class="label">预售中</span>
+								<span class="deposit">
+									订金￥<em class="txt"></em>
+								</span>
+								<span class="presalePrice">
+									预售价￥<em class="txt"></em>
+								</span>
+								<div class="countdown">距离结束还有</div>
+							</div>
+						</div>
+						<div class="price">
+							<div class="box clearContent">
+								<div class="left">国&nbsp;&nbsp;美&nbsp;&nbsp;价</div>
+								<div class="right">
+									<span class="prdPrice"><em>¥</em></span>
+									<a href="javascript:;" class="reduce"></a>
+								</div>
+								<div class="priceFlr">
+									<div class="line">|</div>
+									<div class="lineright">
+										<p>好评度<em id="haocnt"></em></p>
+										<p class="pincnt">
+											<a href="javascript:;" class="reduce">
+												<em id="pincnt"></em>人评价
+											</a>
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="subscriptionPrice clearContent">
+							<span class="prdLeft">预约价</span>
+							<span class="promoPrice">￥100</span>
+							<span class="appointments">预约中</span>
+						</div>
+						<div class="properties clearContent">
+							<div class="prdPropertiesOne">
+								<div class="tese clearContent">
+									<div class="left">特&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;色</div>
+									<div class="right clearContent">
+										<span class="yijiuhuanxin">
+											<em></em>
+											<b></b>
+											<a href="#">以旧换新</a>
+										</span>
+										<span class="baina">
+											<em></em>
+											<b></b>
+											<a href="#">百纳</a>
+										</span>
+										<span class="steward">
+											<em></em>
+											<b></b>
+											<a href="#">管家服务</a>
+										</span>
+
+									</div>
+								</div>
+								<div class="sendTo clearContent">
+									<div class="left">送&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;至</div>
+									<div class="right">
+										<div class="city">
+											<div class="citys regon clearContent">
+												<div class="address">
+													<a href="javascript:;" class="region stockaddress">四川省泸州市江阳区</a>
+												</div>
+												<div class="gCity">
+													<div class="select clearContent">
+														<a href="javascript:;" class="cur">
+															<b>选择省</b>
+															<i></i>
+														</a>
+														<a href="javascript:;">
+															<b>选择市</b>
+															<i></i>
+														</a>
+														<a href="javascript:;">
+															<b>选择区</b>
+															<i></i>
+														</a>
+													</div>
+													<div class="cityMBox">
+														<div class="bctBox"></div>
+														<div class="bctBox" style="display: none;">暂无数据，请选择省</div>
+														<div class="bctBox" style="display: none;">暂无数据，请选择省和市</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="particular">
+											<input type="text" name="" id="" value="" placeholder="请输入详细地址" />
+										</div>
+										<div class="hint">
+											<span class="hasstock"></span>
+											<span class="zhichi"><a href="javascript:;">免运费</a></span>
+										</div>
+
+									</div>
+								</div>
+
+								<div class="service clearContent">
+									<div class="left">服&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;务</div>
+									<div class="right">
+										<span class="serviceBable">
+											由<a href="#" target="_blank" class="facilitator"></a>
+											<span>发货并负责售后服务</span>
+										</span>
+									</div>
+								</div>
+
+								<div class="factoryInstall">
+									<div class="left">厂&nbsp;家&nbsp;安&nbsp;装</div>
+									<div class="right">
+										<span class="phone">12456</span>
+										<div class="more">
+											<a href="javascript:void(0);">帮助提示</a>
+											<div class="tips">
+												<div class="sanjiao"></div>
+												<div class="tip">
+													<p class="infos">aaaaa</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="prdPropertiesTwo">
+								<div class="addedservice clearContent">
+									<div class="left">延&nbsp;保&nbsp;服&nbsp;务</div>
+									<div class="right">
+										<div class="more">
+											<a href="javascript:void(0);">帮助提示</a>
+											<div class="tips">
+												<div class="sanjiao"></div>
+												<div class="tip">
+													<p class="infos">凡是在国美购买的家安保服务，在保障期间内遇到无论是正常使用中的问题还是意外事故，即可享受家安保服务。国美家安保内容包括：延长保修、只换不修、屏碎保护、意外保护、服务保障。覆盖家电、手机数码、电脑办公等商品。</p>
+													<p class="shengming">家安保服务，只能提供增值税普通电子发票，如有疑问，请与在线客服<span>在线客服</span>联系</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="subscription clearContent">
+									<div class="left"></div>
+									<div class="right">
+										<em class="d">00</em>
+										<span>天</span>
+										<em class="h">09</em>
+										<span>时</span>
+										<em class="m">11</em>
+										<span>分</span>
+										<em class="s">30</em>
+										<span>秒</span>
+										<div class="content">
+											<span>已有</span>
+											<strong>0</strong>
+											<span>人成功预约</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="buttons clearContent">
+							<div class="wrapper">
+								<input type="text" class="quantity">
+								<a href="javascript:;" class="puls">+</a>
+								<a href="javascript:;" class="minus disable">-</a>
+							</div>
+							<a href="javascript:;" class="probtn subscribeBtn">立即预约</a>
+							<a href="javascript:;" class="probtn rushPurchaseBtn">立即抢购</a>
+							<a href="javascript:;" class="probtn presellBtn">预售</a>
+							<a href="javascript:;" class="probtn addShoppingCartBtn">加入购物车</a>
+							<a href="javascript:;" class="probtn stagesBtn">分期购</a>
+							<a href="javascript:;" class="probtn easeshoppingBtn">快速购</a>
+							<a href="javascript:;" class="probtn mobtn">
+								<i class="mobtnma"></i>
+								手机下单
+								<div class="codeDown">
+									<img src="../img/png/item.png">
+								</div>
+							</a>
+							<a href="javascript:;" class="probtn hasstockBtn">到货通知</a>
+							<a href="javascript:;" class="probtn offLoadingBtn">商品下架</a>
+							<div class="subscribeMore">
+								<a href="javascript:;">
+									<i></i>
+									了解预约抢购
+								</a>
+								<div class="subscribeMoreMsg">
+									<i class="arrowLeftBtn"></i>
+									<p>预约抢购规则</p>
+									<p>1、欢迎预约购买，请在正式开售之后下单付款；</p>
+									<p>2、商品开售后，仅有已预约的用户可购买商品；</p>
+									<p>3、每人限购一件，先到先得。</p>
+								</div>
+							</div>
+						</div>
+						<div class="proTips clearContent">
+							<p>温馨提示</p>
+							<ol class="warmPrompt">
+								<li>正品保障；支持7天无理由退货</li>
+							</ol>
+						</div>
+					</div>
+					<div class="firstscreenRight">
+						<div class="reskim">
+							<h2>看了又看</h2>
+							<div class="swiper-container carousel">
+								<div class="swiper-wrapper box">
+									<ul class="swiper-slide">
+										<li>
+											<a href="">
+												<img src="../img/jpg/carousel-sm-1.jpg">
+												<p>
+													<span>¥249.00</span>
+												</p>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<img src="../img/jpg/carousel-sm-1.jpg">
+												<p>
+													<span>¥249.00</span>
+												</p>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<img src="../img/jpg/carousel-sm-1.jpg">
+												<p>
+													<span>¥249.00</span>
+												</p>
+											</a>
+										</li>
+									</ul>
+									<ul class="swiper-slide">
+										<li>
+											<a href="">
+												<img src="../img/jpg/carousel-sm-2.jpg">
+												<p>
+													<span>¥249.00</span>
+												</p>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<img src="../img/jpg/carousel-sm-2.jpg">
+												<p>
+													<span>¥249.00</span>
+												</p>
+											</a>
+										</li>
+										<li>
+											<a href="">
+												<img src="../img/jpg/carousel-sm-2.jpg">
+												<p>
+													<span>¥249.00</span>
+												</p>
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="carouselPager"></div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+				<div class="info wbox">
+					<div class="OtherSimilar">
+						<div class="similar">
+							<h3>其他类似商品</h3>
+							<div class="content">
+								<div class="outBtn">
+									<a href="javascript:;" class="infopreBtn">
+										<b></b>
+									</a>
+									<a href="javascript:;" class="infonextBtn">
+										<s></s>
+									</a>
+								</div>
+								<div class="OtherSimilarcont swiper-container">
+									<div class="contContent swiper-wrapper">
+										<ul class="pushul clearContent swiper-slide">
+											<li>
+												<a href="#">
+													<img src="../img/jpg/carousel-sm-01.jpg">
+												</a>
+												<a href="#">
+													<h2>8H乳胶枕 小米枕头泰国进口天然乳胶枕Z6 乳胶枕头颈椎护颈枕芯大波浪按摩型枕芯 狼牙枕 单只装</h2>
+												</a>
+												<p class="colprice">
+													¥<span>249.00</span>
+												</p>
+											</li>
+											<li>
+												<a href="#">
+													<img src="../img/jpg/carousel-sm-01.jpg">
+												</a>
+												<a href="#">
+													<h2>8H乳胶枕 小米枕头泰国进口天然乳胶枕Z6 乳胶枕头颈椎护颈枕芯大波浪按摩型枕芯 狼牙枕 单只装</h2>
+												</a>
+												<p class="colprice">
+													¥<span>249.00</span>
+												</p>
+											</li>
+										</ul>
+										<ul class="pushul clearContent swiper-slide">
+											<li>
+												<a href="#">
+													<img src="../img/jpg/carousel-sm-02.jpg">
+												</a>
+												<a href="#">
+													<h2>8H乳胶枕 小米枕头泰国进口天然乳胶枕Z6 乳胶枕头颈椎护颈枕芯大波浪按摩型枕芯 狼牙枕 单只装</h2>
+												</a>
+												<p class="colprice">
+													¥<span>249.00</span>
+												</p>
+											</li>
+											<li>
+												<a href="#">
+													<img src="../img/jpg/carousel-sm-02.jpg">
+												</a>
+												<a href="#">
+													<h2>8H乳胶枕 小米枕头泰国进口天然乳胶枕Z6 乳胶枕头颈椎护颈枕芯大波浪按摩型枕芯 狼牙枕 单只装</h2>
+												</a>
+												<p class="colprice">
+													¥<span>249.00</span>
+												</p>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+
+							</div>
+						</div>
+					</div>
+					<div class="side">
+						<div class="infos">
+							<div class="stores">
+								<h2>
+									<a href="#" class="name">8H家具旗舰店</a>
+									<a href="javascript:;" class="iconService">
+										<i></i>
+									</a>
+								</h2>
+								<div class="serviceWrapper">
+									<div class="stars">
+										服务评分
+										<span class="star">
+											<i></i>
+										</span>
+										<span class="score">4.5</span>
+										分
+									</div>
+									<div class="scoreDetail">
+										<p>
+											<span class="detail">评分明细</span>
+											<span class="contrast">与行业对比</span>
+										</p>
+										<div class="describe">
+											<p>
+												商品描述：
+												<span>4.50</span>
+												<small title="计算规则：（商家得分-同行业平均分）/（同行业商家最高得分-同行业平均分）" class="gaoText">47.44%</small>
+												<i class="gaoIcon"></i>
+											</p>
+										</div>
+										<div class="logistics">
+											<p>
+												商品描述：
+												<span>4.50</span>
+												<small title="计算规则：（商家得分-同行业平均分）/（同行业商家最高得分-同行业平均分）" class="gaoText">47.44%</small>
+												<i class="gaoIcon"></i>
+											</p>
+										</div>
+										<div class="services">
+											<p>
+												商品描述：
+												<span>4.50</span>
+												<small title="计算规则：（商家得分-同行业平均分）/（同行业商家最高得分-同行业平均分）" class="diText">100.00%</small>
+												<i class="diIcon"></i>
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="groupBtn">
+									<a href="#" class="btn product">进入店铺</a>
+									<a href="#" class="btn collect">收藏店铺</a>
+								</div>
+							</div>
+						</div>
+						<div class="search">
+							<h3 class="clearContent">
+								店内搜索
+							</h3>
+							<div class="bd">
+								<div class="bdSelect">
+									<label for="keyword">关键字：</label>
+									<input type="text" class="keywordInp" id="keywordInp" value="搜本店">
+								</div>
+								<div class="bdSelect">
+									<label for="price">价格：</label>
+									<div class="priceArea">
+										<div class="sideW sideW1">
+											<span>¥</span>
+											<input type="text" class="PricekeywordPrev" name="PricekeywordPrev">
+										</div>
+										<div class="sideW sideW2">--</div>
+										<div class="sideW sideW3">
+											<span>¥</span>
+											<input type="text" class="PricekeywordNext" name="PricekeywordNext">
+										</div>
+									</div>
+								</div>
+								<div class="bdSelect bdSelectBtngroup">
+									<a href="javascript:;" class="sure">确定</a>
+								</div>
+								<div class="error">请注意：价格必须为数字!</div>
+							</div>
+						</div>
+
+						<div class="sort">
+							<h3 class="clearContent">
+								店铺商品分类
+							</h3>
+							<div class="rcbox clearContent">
+								<div class="menulist">
+									<a href="#">全部分类商品</a>
+									<dl>
+										<dt>
+											<b></b>
+											<h4>
+												<a href="#" class="menuClassName">枕头</a>
+											</h4>
+										</dt>
+										<dd>
+											<a href="#" class="menuClassContent">乳胶枕</a>
+										</dd>
+									</dl>
+								</div>
+							</div>
+						</div>
+
+						<div class="pushBoxList BrowseForFinalPurchase">
+							<h3>浏览最终购买</h3>
+							<ul>
+								<li>
+									<a href="#">
+										<img src="../img/jpg/carousel-sm-01.jpg">
+										<p>
+											￥<span>239.00</span>
+										</p>
+										<div>
+											8H乳胶枕Z2 小米米家生态链泰国直采天然乳胶双层枕套 科学曲线舒适护颈透气乳胶枕头 白色 单只装
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/jpg/carousel-sm-01.jpg">
+										<p>
+											￥<span>239.00</span>
+										</p>
+										<div>
+											8H乳胶枕Z2 小米米家生态链泰国直采天然乳胶双层枕套 科学曲线舒适护颈透气乳胶枕头 白色 单只装
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="pushBoxList ShopSellLikeHotCakes">
+							<h3>店铺热销</h3>
+							<ul>
+								<li>
+									<a href="#">
+										<img src="../img/jpg/carousel-sm-01.jpg">
+										<p>
+											￥<span>239.00</span>
+										</p>
+										<div>
+											8H乳胶枕Z2 小米米家生态链泰国直采天然乳胶双层枕套 科学曲线舒适护颈透气乳胶枕头 白色 单只装
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/jpg/carousel-sm-01.jpg">
+										<p>
+											￥<span>239.00</span>
+										</p>
+										<div>
+											8H乳胶枕Z2 小米米家生态链泰国直采天然乳胶双层枕套 科学曲线舒适护颈透气乳胶枕头 白色 单只装
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<div class="pushBoxList BrowsedAndBrowsed">
+							<h3>浏览了还浏览</h3>
+							<ul>
+								<li>
+									<a href="#">
+										<img src="../img/jpg/carousel-sm-01.jpg">
+										<p>
+											￥<span>239.00</span>
+										</p>
+										<div>
+											8H乳胶枕Z2 小米米家生态链泰国直采天然乳胶双层枕套 科学曲线舒适护颈透气乳胶枕头 白色 单只装
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<img src="../img/jpg/carousel-sm-01.jpg">
+										<p>
+											￥<span>239.00</span>
+										</p>
+										<div>
+											8H乳胶枕Z2 小米米家生态链泰国直采天然乳胶双层枕套 科学曲线舒适护颈透气乳胶枕头 白色 单只装
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="main">
+						<div class="proDesc">
+							<div class="pdtlTab">
+								<ul class="prdtitbox">
+									<li class="cur">
+										<a href="javascript:;">商品详情</a>
+									</li>
+									<li>
+										<a href="javascript:;">规格与包装</a>
+									</li>
+									<li>
+										<a href="javascript:;">商品评价</a>
+										<span class="number">（513）</span>
+									</li>
+									<li>
+										<a href="javascript:;">售后保障</a>
+									</li>
+									<li>
+										<a href="javascript:;">小助手</a>
+									</li>
+									<li>
+										<a href="javascript:;">本店好评商品</a>
+									</li>
+								</ul>
+								<div class="minichart">
+									<div class="join">
+										<a href="javascript:;" class="redlink">加入购物车</a>
+										<div class="floatToCart">
+											<div class="cartLeft">
+												<img src="../img/jpg/carousel-sm-01.jpg">
+											</div>
+											<div class="cartRight">
+												<p class="prdname">8H乳胶枕Z2 小米米家生态链泰国直采天然乳胶双层枕套 科学曲线舒适护颈透气乳胶枕头 白色 单只装</p>
+												<p class="miniPrice">¥239.00</p>
+											</div>
+										</div>
+									</div>
+
+									<div class="mobileOrder">
+										<a href="javascript:;" class="order">
+											<i></i>手机下单
+										</a>
+										<img src="../img/png/item.png">
+									</div>
+
+
+
+								</div>
+							</div>
+							<ul class="pdMainBox">
+								<li class="clearContent">
+									<div class="slider">
+										<div class="specificationParameter">
+											<p class="Parameter">
+												<span>商品名称：8H乳胶枕Z2 小米米家生态链泰国直采天然乳胶双层枕套 科学曲线舒适护颈透气乳胶枕头 白色 单只装</span>
+											</p>
+											<p class="Parameter">
+												<span>店铺名称：</span>
+												<a href="#" target="_blank">8H家具旗舰店</a>
+											</p>
+											<p class="Parameter">
+												<span>店铺名称：</span>
+												<a href="#" target="_blank">8H家具旗舰店</a>
+											</p>
+											<p class="Parameter">
+												<span>品牌：</span>
+												<a href="#" target="_blank">8H</a>
+											</p>
+											<p class="Parameter">
+												<span>分类：其他</span>
+											</p>
+											<p class="Parameter">
+												<span>颜色：其他</span>
+											</p>
+											<p class="Parameter">
+												<span>厚度：常规</span>
+											</p>
+											<p class="Parameter">
+												<span>是否可定制：否</span>
+											</p>
+											<p class="Parameter">
+												<span>尺寸规格：其他</span>
+											</p>
+											<p class="moreParameter">
+												<a href="javascript:;">更多参数 &gt;</a>
+											</p>
+										</div>
+										<div class="detail">
+											<p>
+												<img src="//gfs2.gomein.net.cn/T15HhyBvY_1RCvBVdK">
+											</p>
+											<p>
+												<img src="//gfs4.gomein.net.cn/T1jpxyBCL_1RCvBVdK">
+											</p>
+											<p>
+												<img src="//gfs4.gomein.net.cn/T1OHKyBgZT1RCvBVdK">
+											</p>
+											<p>
+												<img src="//gfs3.gomein.net.cn/T1KHxyBCV_1RCvBVdK">
+											</p>
+										</div>
+									</div>
+								</li>
+								<li>
+									<ul class="specbox">
+										<li class="corr">
+											如果您发现商品信息不准确，<a href="javascript:;" class="j-corr">欢迎纠错</a>
+										</li>
+										<li class="pedcaption">规格</li>
+										<li class="spectit">主体</li>
+										<li>
+											<span class="specinfo">品牌</span>
+											<span>8H</span>
+										</li>
+										<li>
+											<span class="specinfo">分类</span>
+											<span>其他</span>
+										</li>
+										<li>
+											<span class="specinfo">颜色</span>
+											<span>其他</span>
+										</li>
+										<li>
+											<span class="specinfo">厚度</span>
+											<span>常规</span>
+										</li>
+										<li>
+											<span class="specinfo">尺寸规格</span>
+											<span>其他</span>
+										</li>
+									</ul>
+									<ul class="packingList">
+										<li>
+											<h2>包装清单</h2>
+											<p class="cont">枕头*1</p>
+										</li>
+										<li class="flowPath">
+											<h2>签收与验货流程</h2>
+											<img src="../img/jpg/process.jpg">
+											<a href="#" target="_blank">详情请见签收与验货</a>
+										</li>
+									</ul>
+								</li>
+								<li>
+
+								</li>
+								<li></li>
+								<li>
+									<ul class="pedhelptop">
+										<li>
+											<b>【报价】</b>查看
+											<a href="#" target="_blank">8H床垫相关价格表</a>
+										</li>
+										<li>
+											<b>【评价】</b>查看
+											<a href="#" target="_blank">8H床垫怎么样？</a>
+										</li>
+									</ul>
+								</li>
+								<li></li>
+							</ul>
+						</div>
+						<div class="proApprobated">
+							<h2>售后保障</h2>
+							<ul class="shmn">
+								<li>
+									<div class="afterSaleContentBox">
+										<h3>售后内容</h3>
+										<i class="afterSaleContentIcon"></i>
+										<ul class="afterSaleContent">
+											<li>7天无理由退换货</li>
+										</ul>
+									</div>
+									<div class="afterSalePromiseBox">
+										<h3>售后承诺</h3>
+										<div class="afterSalePromiseContent">
+											<ul>
+												<li>
+													<i class="unprofor">保</i>
+													<p class="fine">国美商城服务承诺：</p>
+													<p class="content">
+														国美商城向您保证所售商品均为正品行货，国美商城自营商品自带机打发票，与商品一起寄送(部分商品，需在您收到货物之后，我司为您邮寄)。凭质保证书及国美商城发票，可享受全国联保服务，与您亲临商场选购的商品享受相同的质量保证。
+														<span>温馨提示：因厂家会在没有任何提前通知的情况下更改产品包装、产地或者一些附件，本司不能确保客户收到的货物与商城图片、产地、附件说明完全一致。只能确保为原厂正货！并且保证与当时市场上同样主流新品一致。若本商城没有及时更新，请大家谅解！</span>
+													</p>
+												</li>
+											</ul>
+											<p class="viewlink">
+												查看&nbsp;<a href="#" target="_blank">第三方退换货政策</a>
+											</p>
+										</div>
+									</div>
+									<div class="afterSaleServiceBox">
+										<h3>售后服务</h3>
+										<ul>
+											<li>
+												<i class="afterSaleServiceiconBao"></i>
+												<span>家安保 (延长保修 碎屏保修 意外保修)</span>
+											</li>
+											<li>
+												<i class="afterSaleServiceiconweixiu"></i>
+												<span>专业维修</span>
+											</li>
+											<li>
+												<i class="afterSaleServiceiconhuishou"></i>
+												<span>家电回收</span>
+											</li>
+											<li>
+												<i class="afterSaleServiceiconqingxi"></i>
+												<span>家电清洗</span>
+											</li>
+											<li>
+												<i class="afterSaleServiceiconanzhuang"></i>
+												<span>上门安装</span>
+											</li>
+										</ul>
+									</div>
+									<div class="priceExplanation">
+										<h3>价格说明：</h3>
+										<ul>
+											<li>
+												<span>未划线价格：</span>
+												该价格是商品的销售标价，最终成交价格可能会因使用优惠券等原因而发生变化，请以订单结算页面价格为准。
+											</li>
+											<li>
+												<span>划线价格：</span>
+												该价格是商品的参考价，可能是商品的厂商指导价、正品零售价、商品吊牌价、品牌专柜价，或者是在国美平台上曾经展示过的销售价等价格,仅供您选购商品时参考。
+											</li>
+											<li>
+												<span>其他：</span>
+												1.商品促销信息以商品详情页促销栏目中的信息为准；2.如您发现活动商品售价或促销信息有异常，请购买前先联系销售商咨询。
+											</li>
+										</ul>
+									</div>
+								</li>
+							</ul>
+
+							<div class="seohotLinksBox">
+								<h3>热门链接：</h3>
+								<div class="seohotLinks">
+									<a href="#">
+										浪漫星 乳胶床垫 3E椰棕 席梦思 记忆棉椰棕垫独立弹簧 软硬护脊(C：整网弹簧+椰棕 1200*1900)
+									</a>
+									<a href="#">
+										缘诺亿 LM 3E椰梦维床垫棕垫环保双人棕榈天然椰棕偏硬床垫1.5m1.8m(金色 120*190*7cm)
+									</a>
+									<a href="#">
+										浪漫星 乳胶床垫 3E椰棕 席梦思 记忆棉椰棕垫独立弹簧 软硬护脊(C：整网弹簧+椰棕 1200*1900)
+									</a>
+									<a href="#">
+										缘诺亿 LM 3E椰梦维床垫棕垫环保双人棕榈天然椰棕偏硬床垫1.5m1.8m(金色 120*190*7cm)
+									</a>
+									<a href="#">
+										浪漫星 乳胶床垫 3E椰棕 席梦思 记忆棉椰棕垫独立弹簧 软硬护脊(C：整网弹簧+椰棕 1200*1900)
+									</a>
+									<a href="#">
+										缘诺亿 LM 3E椰梦维床垫棕垫环保双人棕榈天然椰棕偏硬床垫1.5m1.8m(金色 120*190*7cm)
+									</a>
+									<a href="#">
+										浪漫星 乳胶床垫 3E椰棕 席梦思 记忆棉椰棕垫独立弹簧 软硬护脊(C：整网弹簧+椰棕 1200*1900)
+									</a>
+									<a href="#">
+										缘诺亿 LM 3E椰梦维床垫棕垫环保双人棕榈天然椰棕偏硬床垫1.5m1.8m(金色 120*190*7cm)
+									</a>
+									<a href="#">
+										浪漫星 乳胶床垫 3E椰棕 席梦思 记忆棉椰棕垫独立弹簧 软硬护脊(C：整网弹簧+椰棕 1200*1900)
+									</a>
+									<a href="#">
+										缘诺亿 LM 3E椰梦维床垫棕垫环保双人棕榈天然椰棕偏硬床垫1.5m1.8m(金色 120*190*7cm)
+									</a>
+									<a href="#">
+										浪漫星 乳胶床垫 3E椰棕 席梦思 记忆棉椰棕垫独立弹簧 软硬护脊(C：整网弹簧+椰棕 1200*1900)
+									</a>
+									<a href="#">
+										缘诺亿 LM 3E椰梦维床垫棕垫环保双人棕榈天然椰棕偏硬床垫1.5m1.8m(金色 120*190*7cm)
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div class="appraiseDetailBox">
+							<h2>
+								<a href="">商品评价</a>
+							</h2>
+							<div class="appraiseDetail">
+								<div class="sorceOut clearContent">
+									<div class="sor">
+										<div class="sper">
+											<span>99</span>
+											<b>%</b>
+											<em>好评度</em>
+										</div>
+										<div class="gmb">
+											<p>
+												好评<span>(99%)</span>
+												<em>
+													<b style="width:99%"></b>
+												</em>
+											</p>
+											<p>
+												中评<span>(0%)</span>
+												<em>
+													<b style="width:0%"></b>
+												</em>
+											</p>
+											<p>
+												差评<span>(0%)</span>
+												<em>
+													<b style="width:0%"></b>
+												</em>
+											</p>
+										</div>
+									</div>
+									<div class="spot">
+										<p>买家印象：</p>
+										<div class="spotContent">
+											质量优
+										</div>
+									</div>
+									<div class="comt">
+										您可对已购的商品进行评价
+										<a href="#" class="comtLink">发表评价拿美豆</a>
+										<span>
+											100美豆=1元
+											<a href="#">评价规则</a>
+										</span>
+									</div>
+								</div>
+
+								<div class="appraiseType">
+									<div class="appraiseSide">
+										<span class="cur">全部评价(515)</span>
+										<span>晒图(0)</span>
+										<span>好评(514)</span>
+										<span>中评(0)</span>
+										<span>差评(1)</span>
+										<span>只看当前商品评价</span>
+									</div>
+									<div class="appraiseSort">
+										<a href="javascript:;" class="sortType">
+											按默认<i class="iconSortDown"></i>
+										</a>
+										<ul>
+											<li>
+												<a href="javascript:;">按时间</a>
+											</li>
+											<li class="active">
+												<a href="javascript:;">按默认</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="cmtComment">
+									<div class="cmtComment clearContent">
+										<ul class="replyListWrap">
+											<li>
+												<div class="replyLeft">
+													<div class="replyAvatar">
+														<img src="../img/jpg/headPortrait.jpg">
+														<span class="replyAvatarUserName">邸***f</span>
+													</div>
+													<p class="profileGrade">
+														<span class="viplevel">G2会员</span>
+														<span class="area">北京市</span>
+													</p>
+													<p class="come">来自国美Android客户端</p>
+												</div>
+												<div class="replyRight">
+													<div class="inner">
+														<div class="evaluate">
+															<span></span>
+														</div>
+														<div class="experience">
+															<em>使用心得：</em>
+															小米的东西真不错特别舒服值得推荐
+														</div>
+														<div class="infoTime">
+															<span>收货后4天评价</span>
+															<a href="">2019-11-11 15:04</a>
+															<div class="thumbUpWithReplyBtnGroup">
+																<a href="javascript:;" class="approval">
+																	<b>赞同</b>
+																</a>
+																<a href="javascript:;" class="reply">
+																	<b>回复</b>
+																</a>
+															</div>
+															<div class="replyContentBox">
+																<div class="closeArrow">
+																	<span class="close">╳</span>
+																</div>
+																<div class="replyWarp">
+																	<p class="replyTitle">
+																		回复<span class="replayUser">邸***f</span>
+																	</p>
+																	<p class="replyInput">
+																		<textarea></textarea>
+																	</p>
+																	<p class="submitBox">
+																		<span class="theRemainingWords">您还可以输入400字</span>
+																		<span class="replySubmit" appraiseid="P195798336">提交</span>
+																	</p>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</li>
+										</ul>
+
+										<div class="pageBox clearContent">
+											<a href="#" target="_blank" class="allcmt">查看全部评价 &gt;</a>
+											<div class="page">
+												<a href="javascript:;" class="gpprev">
+													上一页<b class="pgbdrs"></b>
+												</a>
+												<a href="javascript:;" class="num cur">1</a>
+												<a href="javascript:;" class="num">2</a>
+												<a href="javascript:;" class="num">3</a>
+												<a href="javascript:;" class="num">4</a>
+												<a href="javascript:;" class="num">5</a>
+												<span class="ndot">…</span>
+												<a href="javascript:;" class="gpnext">
+													下一页<b class="pgbdrs"></b>
+												</a>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="praiseGoods">
+							<h2>本店好评商品</h2>
+							<div class="praiseGoodsLists">
+								<div class="waterfall">
+									<ul class="waterfallUl">
+										<li>
+											<div class="picture">
+												<a href="#">
+													<img src="../img/jpg/carousel-sm-01.jpg">
+												</a>
+												<p>¥1899.00</p>
+											</div>
+											<div class="appraise">
+												<ul>
+													<li>
+														<div class="txtAppraise">
+															<span class="nickname"></span>
+															<span class="content">好舒服</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="picture">
+												<a href="#">
+													<img src="../img/jpg/carousel-sm-01.jpg">
+												</a>
+												<p>¥1899.00</p>
+											</div>
+											<div class="appraise">
+												<ul>
+													<li>
+														<div class="txtAppraise">
+															<span class="nickname"></span>
+															<span class="content">好舒服</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="picture">
+												<a href="#">
+													<img src="../img/jpg/carousel-sm-01.jpg">
+												</a>
+												<p>¥1899.00</p>
+											</div>
+											<div class="appraise">
+												<ul>
+													<li>
+														<div class="txtAppraise">
+															<span class="nickname"></span>
+															<span class="content">好舒服</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="picture">
+												<a href="#">
+													<img src="../img/jpg/carousel-sm-01.jpg">
+												</a>
+												<p>¥1899.00</p>
+											</div>
+											<div class="appraise">
+												<ul>
+													<li>
+														<div class="txtAppraise">
+															<span class="nickname"></span>
+															<span class="content">好舒服</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="picture">
+												<a href="#">
+													<img src="../img/jpg/carousel-sm-01.jpg">
+												</a>
+												<p>¥1899.00</p>
+											</div>
+											<div class="appraise">
+												<ul>
+													<li>
+														<div class="txtAppraise">
+															<span class="nickname"></span>
+															<span class="content">好舒服</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+										<li>
+											<div class="picture">
+												<a href="#">
+													<img src="../img/jpg/carousel-sm-01.jpg">
+												</a>
+												<p>¥1899.00</p>
+											</div>
+											<div class="appraise">
+												<ul>
+													<li>
+														<div class="txtAppraise">
+															<span class="nickname"></span>
+															<span class="content">好舒服</span>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+
+						<div class="section">
+							<h2>购买咨询</h2>
+							<div class="sectionContent">
+								<div class="sectionContentWarp">
+									<div class="sectionContentWarpLeft">
+										<div class="search">
+											<p class="tit">搜索相关咨询：</p>
+											<div class="searchContent">
+												<label for="txt" class="srhInput">请输入咨询关键词</label>
+												<input type="text" class="txt" id="txt">
+												<input type="button" class="srhBtn" value="搜索">
+											</div>
+										</div>
+										<dl class="question clearContent">
+											<dt>常见问题</dt>
+											<dd>
+												•<a href="">忘记密码如何操作？</a>
+											</dd>
+											<dd>
+												•<a href="">如何增强账户安全系数？</a>
+											</dd>
+											<dd>
+												•<a href="">怎么操作商品签收？</a>
+											</dd>
+											<dd>
+												•<a href="">如何电话订购？</a>
+											</dd>
+											<dd>
+												•<a href="">如何查询商品参数及包装清单？</a>
+											</dd>
+											<dd>
+												•<a href="">商品无货怎么办？</a>
+											</dd>
+										</dl>
+										<div class="relief">
+											温馨提醒：因厂家同步信息存在时间误差，且每位用户购买情况、提问时间不尽相同，以下回复仅在提问时间3天内有效，仅供参考，谢谢~
+										</div>
+									</div>
+									<div class="sectionContentWarpRight">
+										<table class="sectionContentWarpTableForm">
+											<caption>我要发表咨询</caption>
+											<tbody>
+												<tr>
+													<th>咨询类型: </th>
+													<td>
+														<label for="l1" class="type">
+															<input type="radio" value="1" name="cst-type" id="l1" checked="checked">购买咨询
+														</label>
+														<label for="l2" class="type">
+															<input type="radio" value="2" name="cst-type" id="l2">促销优惠
+														</label>
+														<label for="l3" class="type">
+															<input type="radio" value="3" name="cst-type" id="l3">支付问题
+														</label>
+														<label for="l4" class="type">
+															<input type="radio" value="4" name="cst-type" id="l4">售后问题
+														</label>
+													</td>
+												</tr>
+												<tr>
+													<th>咨询内容:&nbsp;</th>
+													<td>
+														<div class="txtAreaWrap">
+															<textarea class="txtArea"></textarea>
+															<p class="proQues">
+																如何尽快找到咨询答案：<br>
+																1、使用本页面左侧的搜索功能<br>
+																2、仔细查看相关提示信息和帮助文档
+															</p>
+														</div>
+													</td>
+												</tr>
+												<tr>
+													<th></th>
+													<td>
+														<a href="javascript:;" class="smtBtn">提交</a>
+														<span class="tips">0/200</span>
+													</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</div>
+
+								<div class="types">
+									<label for="ct1" class="type slt">
+										<input type="radio" value="1" name="cst-type" id="ct1" checked="checked">全部咨询
+									</label>
+									<label for="ct2" class="type">
+										<input type="radio" value="1" name="cst-type" id="ct2">购买咨询
+									</label>
+								</div>
+								<div class="cons">
+									<ul>
+										<li class="clearContent">
+											<dl class="ques">
+												<dt>咨询内容：</dt>
+												<dd>
+													<span class="time">2019-10-24 15:43:36</span>
+													<span class="name">gm_***698...</span>
+													<span class="con">
+														<a href="#" target="_blank">赠180卷怎么用</a>
+													</span>
+												</dd>
+											</dl>
+											<dl class="ques">
+												<dt>国美回复：</dt>
+												<dd>
+													<span class="time">2019-10-24 15:43:36</span>
+													<span class="con">
+														您好，您的180元卷，麻烦您查看一下卷的详细情况
+													</span>
+												</dd>
+											</dl>
+										</li>
+										<li class="total">
+											共1条<a target="_blank" href="#">浏览所有咨询 &gt;</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="wbox guessAndbrowse">
+					<div class="guessWhatYouLike clearContent">
+						<div class="pushBox">
+							<h3>
+								<span class="title" style="float:left;">根据浏览猜你喜欢</span>
+								<span class="refreshBtn">
+									<span class="text">换一组</span>
+									<i class="refreshBtnIcon"></i>
+								</span>
+							</h3>
+							<div class="andBuyOut swiper-container">
+								<div class="cont swiper-wrapper">
+									<ul class="pushul swiper-slide">
+										<li>
+											<a href="">
+												<img src="../img/jpg/carousel-sm-01.jpg">
+											</a>
+											<a href="">
+												<h2>海尔(Haier) 电热水器 60升 双管变频加热 专利安全防电墙 8年包修 EC6002-Q6</h2>
+											</a>
+											<p class="colprice">
+												¥<span>949.00</span>
+											</p>
+										</li>
+										<li>
+											<a href="">
+												<img src="../img/jpg/carousel-sm-01.jpg">
+											</a>
+											<a href="">
+												<h2>海尔(Haier) 电热水器 60升 双管变频加热 专利安全防电墙 8年包修 EC6002-Q6</h2>
+											</a>
+											<p class="colprice">
+												¥<span>949.00</span>
+											</p>
+										</li>
+									</ul>
+									<ul class="pushul swiper-slide">
+										<li>
+											<a href="">
+												<img src="../img/jpg/carousel-sm-02.jpg">
+											</a>
+											<a href="">
+												<h2>海尔(Haier) 电热水器 60升 双管变频加热 专利安全防电墙 8年包修 EC6002-Q6</h2>
+											</a>
+											<p class="colprice">
+												¥<span>949.00</span>
+											</p>
+										</li>
+										<li>
+											<a href="">
+												<img src="../img/jpg/carousel-sm-02.jpg">
+											</a>
+											<a href="">
+												<h2>海尔(Haier) 电热水器 60升 双管变频加热 专利安全防电墙 8年包修 EC6002-Q6</h2>
+											</a>
+											<p class="colprice">
+												¥<span>949.00</span>
+											</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="RecentBrowse clearContent">
+						<h2>最近浏览</h2>
+						<div class="recently">
+							<ul>
+								<li>
+									<div class="imgW"> 
+										<a href="#" target="_blank">
+											<img src="//gfs17.gomein.net.cn/T11pbyB4dT1RCvBVdK_100.jpg">
+										</a>
+									</div>
+									<p class="title">
+										<a href="#" target="_blank">
+											<span>8H乳胶枕Z2小米米家生态链泰国直采天然乳胶双层枕套 科学曲线舒适护颈透气乳胶枕头 白色 单只装</span>
+										</a>
+									</p>
+									<p class="colprice">
+										¥<span>239.00</span><i>真划算</i>
+									</p>
+								</li>
+								<li>
+									<div class="imgW"> 
+										<a href="#" target="_blank">
+											<img src="//gfs17.gomein.net.cn/T11pbyB4dT1RCvBVdK_100.jpg">
+										</a>
+									</div>
+									<p class="title">
+										<a href="#" target="_blank">
+											<span>8H乳胶枕Z2小米米家生态链泰国直采天然乳胶双层枕套 科学曲线舒适护颈透气乳胶枕头 白色 单只装</span>
+										</a>
+									</p>
+									<p class="colprice">
+										¥<span>239.00</span><i>真划算</i>
+									</p>
+								</li>
+								<li>
+									<div class="imgW"> 
+										<a href="#" target="_blank">
+											<img src="//gfs17.gomein.net.cn/T11pbyB4dT1RCvBVdK_100.jpg">
+										</a>
+									</div>
+									<p class="title">
+										<a href="#" target="_blank">
+											<span>8H乳胶枕Z2小米米家生态链泰国直采天然乳胶双层枕套 科学曲线舒适护颈透气乳胶枕头 白色 单只装</span>
+										</a>
+									</p>
+									<p class="colprice">
+										¥<span>239.00</span><i>真划算</i>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!-- 帮助 -->
+				<div class="help">
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+								<i class="icon"></i>
+								品质
+							</a>
+							<span class="dot"></span>
+							<a href="#" class="secTitle">正品行货 购物无忧</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<i class="icon"></i>
+								品质
+							</a>
+							<span class="dot"></span>
+							<a href="#" class="secTitle">正品行货 购物无忧</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+								<i class="icon"></i>
+								品质
+							</a>
+							<span class="dot"></span>
+							<a href="#" class="secTitle">正品行货 购物无忧</a>
+						</li>
+					</ul>
+					<div class="helpBox">
+						<dl>
+							<dt>物流配送</dt>
+							<dd>
+								<ul>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>物流配送</dt>
+							<dd>
+								<ul>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>物流配送</dt>
+							<dd>
+								<ul>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>物流配送</dt>
+							<dd>
+								<ul>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+								</ul>
+							</dd>
+						</dl>
+						<dl>
+							<dt>物流配送</dt>
+							<dd>
+								<ul>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+									<li><a href="#" target="_blank">配送查询</a></li>
+								</ul>
+							</dd>
+						</dl>
+
+					</div>
+				</div>
+				<!-- 底部 -->
+				<div class="footer">
+					<div class="footerBox wbox">
+						<span class="clearContent">
+							<i></i>
+							<p>
+								<strong>门店服务</strong>
+								<a href="#" target="_blank">国美门店全国共计2000余家</a>
+							</p>
+						</span>
+						<span class="clearContent">
+							<i></i>
+							<p>
+								<strong>门店服务</strong>
+								<a href="#" target="_blank">国美门店全国共计2000余家</a>
+							</p>
+						</span>
+						<div class="qrcode">
+							<em class="code wx">
+								<i></i>
+								<p>公众号</p>
+								<div>
+									<img src="//gfs10.gomein.net.cn/T1kPDvBvZj1RCvBVdK.jpg">
+									<i class="triangle"></i>
+								</div>
+							</em>
+							<em class="code wap">
+								<i></i>
+								<p>手机站点</p>
+								<div>
+									<img src="//gfs10.gomein.net.cn/T1kPDvBvZj1RCvBVdK.jpg">
+									<i class="triangle"></i>
+								</div>
+							</em>
+							<em class="codeBg app">
+								<i>
+									<a href="#" target="_blank">
+										<img src="//gfs11.gomein.net.cn/T1uZdyBXCT1RCvBVdK.jpg">
+									</a>
+								</i>
+								<p>扫描下载客户端</p>
+							</em>
+						</div>
+						<ul class="footListZdy">
+							<li>
+								<a href="#" target="_blank">国美控股集团</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">国美管家</a>
+							</li>
+							<li>
+								<a href="#" target="_blank">关于集团</a>
+							</li>
+						</ul>
+
+						<p>
+							本公司游戏产品适合18岁以上成年人使用&nbsp;&nbsp;违法和不良信息举报电话：021-39900132&nbsp;&nbsp;
+							<a class="interDrug" href="#" target="_blank">互联网药品信息服务资格证编号（沪）-经营性-2019-0006</a>
+						</p>
+						<p>
+							网络食品销售第三方平台提供者备案：沪网食备A0015号&nbsp;&nbsp;
+							<a class="interDrug" href="#" target="_blank">网络文化经营许可证沪网文[2017]5537-436号</a>&nbsp;&nbsp;
+							<a class="interDrug" href="#" target="_blank">增值电信业务经营许可证</a>
+						</p>
+						<p>
+							客服电话:4008113333&nbsp;&nbsp;
+							<a class="interDrug" href="#" target="_blank">沪ICP备11009419号/京ICP备 19011786号</a>&nbsp;&nbsp;
+							<a class="interDrug" href="#" target="_blank">京B2-20191290</a>&nbsp;&nbsp;
+							<a class="interDrug" href="//www.gome.com.cn/companyinfo/" target="_blank">经营执照</a>
+							&nbsp;&nbsp;<a class="interDrug" href="#" target="_blank">营业执照</a>&nbsp;&nbsp;
+							<a class="interDrug" href="#" target="_blank">出版物经营许可证</a>
+						</p>
+						<p>
+							©2000-2019&nbsp;&nbsp;国美在线电子商务有限公司版权所有&nbsp;&nbsp;
+							<a class="interDrug tw-w-ico-wrap" href="#" target="_blank">
+								<i class="tw-w-mark-icon"></i>京公网安备 11010502038379号
+							</a>
+						</p>
+						<div class="footCreait">
+							<a class="credit" href="#" target="_blank" rel="nofollow">
+								<i></i>
+								<b>经营性网站备案信息</b>
+							</a>
+							<a class="credit" href="#" target="_blank" rel="nofollow">
+								<i></i>
+								<b>经营性网站备案信息</b>
+							</a>
+							<a class="credit" href="#" target="_blank" rel="nofollow">
+								<i></i>
+								<b>经营性网站备案信息</b>
+							</a>
+							<a class="credit" href="#" target="_blank" rel="nofollow">
+								<i></i>
+								<b>经营性网站备案信息</b>
+							</a>
+							<a class="credit" href="#" target="_blank" rel="nofollow">
+								<i></i>
+								<b>经营性网站备案信息</b>
+							</a>
+							<a class="credit" href="#" target="_blank" rel="nofollow">
+								<i></i>
+								<b>经营性网站备案信息</b>
+							</a>
+							<a class="credit" href="#" target="_blank" rel="nofollow">
+								<i></i>
+								<b>经营性网站备案信息</b>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="bar">
+					<div class="aside">
+						<ul>
+							<li class="app">
+								<b></b>
+								<a href="#">
+									<i></i>
+								</a>
+								<div class="appCode">
+									<a href="">
+										<img src="../img/png/appCode.png">
+									</a>
+								</div>
+							</li>
+
+							<li class="survey">
+								<b></b>
+								<a href="#">
+									<i></i>
+								</a>
+								<div>
+									<p>
+										<a href="javascript:;" target="_blank">有奖调研</a>
+									</p>
+								</div>
+							</li>
+
+							<li class="service">
+								<b></b>
+								<a href="#">
+									<i></i>
+								</a>
+								<div>
+									<p>
+										<a href="javascript:;" target="_blank">在线客服</a>
+									</p>
+								</div>
+							</li>
+
+							<li class="backTop">
+								<b></b>
+								<a href="#">
+									<i></i>
+								</a>
+								<div>
+									<p>
+										<a href="javascript:;" target="_blank">回到顶部</a>
+									</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="barBorder">
+						<ul>
+							<li class="member">
+								<b></b>
+								<i></i>
+								<a href="#" class="tip">国美会员</a>
+							</li>
+							<li class="cart">
+								<b></b>
+								<i></i>
+								<b class="carNum" style="background: rgb(165, 165, 165);">
+									<s>0</s>
+									<span class="point"></span>
+								</b>
+								<span class="text">购物车</span>
+							</li>
+							<li class="coupon">
+								<b></b>
+								<i></i>
+								<a href="#" class="tip">我的收藏</a>
+							</li>
+							<li class="favorites">
+								<i></i>
+							</li>
+
+						</ul>
+					</div>
+				</div>
+				<div class="shoppingCartContent">
+					<div class="member barWrap">
+						<h3>
+							<span class="close"></span>
+						</h3>
+						<div class="carContent">
+							<div class="miniProducts">
+								<h2 class="hdrcartitle"></h2>
+								<ul class="miniProductList clearContent">
+									<li class="miniProductLi clearContent">
+										<dl class="huod"></dl>
+									</li>
+								</ul>
+								<div class="StoreFooter">
+									<h4>
+										已选
+										<span class="csQuantity"></span>
+										件 ，共计：
+										<span class="csSubtotal"></span>
+									</h4>
+									<a href="shoppingCart.html" class="toCarBtn">去购物车</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="mask"></div>
+				<div class="meiyifeDialog">
+					<a href="javascript:;" class="close"></a>
+					<div class="content">
+						<h2>使用APP分期购买</h2>
+						<img src="../img/png/item.png">
+						<p class="title">扫一扫，开启美好之旅</p>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</body>
+</html>

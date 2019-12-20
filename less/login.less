@@ -1,0 +1,530 @@
+@charset "utf-8";
+
+body{
+	overflow-x: hidden;
+}
+
+	.warp{
+		.head{
+			width: 990px;
+			position: relative;
+			height: 120px;
+			vertical-align: middle;
+			.logo{
+				margin: 18px 40px 0 0;
+				float: left;
+				a{
+					width: 300px;
+					height: 62px;
+					margin-top: 13px;
+					display: block;
+					text-indent: -99px;
+					overflow: hidden;
+					h1{
+						background: url(../img/png/loginlogo.png) no-repeat;
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+			.survey:hover{
+				color: #e3101e;
+				text-decoration: underline;
+			}
+			.survey{
+				height: 16px;
+				position: absolute;
+				top: 93px;
+				right: 108px;
+				font-size: 12px;
+				color: #888;
+				.icon{
+					display: inline-block;
+					width: 15px;
+					height: 16px;
+					margin-right: 8px;
+					padding-bottom: 2px;
+					background: url(../img/png/login-bg-common.png) 0 -257px no-repeat;
+					vertical-align: middle
+				}
+			}
+		}
+		.policyTitleBox{
+			background: #fff4e3;
+			overflow: hidden;
+			border-top: 1px solid #fee6bc;
+			.policyTitle{
+				overflow: hidden;
+				>p{
+					width:828px;
+					height: 29px;
+					padding-left: 10px;
+					background: #fff4e3;
+					color: #ff7f23;
+					font-size: 12px;
+					font-weight: 400;
+					line-height: 29px;
+					em{
+						margin: 8px 5px 0 0;
+						background: url(../img/png/login-bg-common.png) -28px 0;
+						display: block;
+						float: left;
+						width: 16px;
+						height: 16px;
+					}
+					a{
+						color: #2875cc;
+					}
+				}
+			}
+		}
+		
+		.content{
+			background: #fff1e8;
+			width: 100%;
+			height: 480px;
+			
+			.main{
+				height: 480px;
+				background-position: top center;
+				
+				.loginBox{
+					float: right;
+					width: 350px;
+					margin: 24px 105px 0 0;
+					position: relative;
+					background: #fff;
+					overflow: visible;
+					.show{
+						display: block!important;
+					}
+					.hide{
+						display: none!important;
+					}
+					.loginHead{
+						position: relative;
+						height: 54px;
+						.cur{
+							color: #e3101e;
+						}
+						.left{
+							position: absolute;
+							border-bottom: 1px solid #f4f4f4;
+							font-weight: 500;
+							font-size: 18px;
+							text-align: center;
+							color: #5e5e5e;
+							left: 0;
+							width: 174px;
+							
+							a{
+								border-right: 1px solid #f4f4f4;
+							}
+							
+						}
+						.right{
+							position: absolute;
+							border-bottom: 1px solid #f4f4f4;
+							font-weight: 500;
+							font-size: 18px;
+							text-align: center;
+							color: #5e5e5e;
+							right: 0;
+							width: 175px;
+							
+						}
+						.leftBtn{
+							left: 0;
+							border-right: 1px solid #f4f4f4;
+						}
+						.rightBtn{
+							right: 0;
+						}
+						a{
+							position: absolute;
+							top: 16px;
+							width: 175px;
+							cursor: pointer;
+							font-size: 18px;
+							text-align: center;
+							color: #5e5e5e;
+						}
+						
+					}
+					.loginMain{
+						padding: 25px 11px 0 19px;
+						min-height: 241px;
+						
+						.login{
+							width: 300px;
+							position: relative;
+							padding: 5px 10px 0;
+						}
+						
+						.codeLogin{
+							width: 320px;
+							color: #888;
+							padding-top: 0;
+							padding: 0 0 24px;
+							display: none;
+							
+							.state{
+								width: 320px;
+								height: 167px;
+								text-align: center;
+								.qrcode{
+									position: relative;
+									width: 320px;
+									height: 165px;
+									.qrcodeImage{
+										float: left;
+										position: absolute;
+										left: 75px;
+										border: 1px solid #e6e6e6;
+										img{
+											width: 165px;
+											height: 165px;
+											vertical-align: inherit;
+										}
+									}
+									.qrcodeHelp{
+										float: right;
+										width: 137px;
+										height: 173px;
+										margin: -8px 0 0 10px;
+										background: url(../img/png/mobile.png) no-repeat;
+										display: none;
+									}
+								}
+								.rightState{
+									display: none;
+									margin-top: 55px;
+									.rightbg{
+										background-image: url(../img/png/spr-icon.png);
+										background-position: 0 -33px;
+										margin: 0 auto 13px;
+										width: 32px;
+										height: 32px;
+										overflow: hidden;
+										
+									}
+									p{
+										color: #5e5e5e;
+										text-align: center;
+										font-size: 12px;
+										line-height: 20px;
+									}
+									.rightTitle{
+										font-size: 16px;
+										font-weight: 700px;
+									}
+									.rightHint{
+										color: #a5a5a5;
+									}
+								}
+								.error{
+									width: 168px;
+									height: 180px;
+									margin: 0 auto;
+									position: absolute;
+									left: 75px;
+									top: 0;
+									display: none;
+									.errorState{
+										position: absolute;
+										top: 0;
+										left: 0;
+										z-index: 2;
+										padding: 48px 10px 0 30px;
+										.errorTitle{
+											text-align: center;
+											text-indent: 5px;
+											font-size: 16px;
+											font-weight: 700;
+											a{
+												width: 105px;
+												height: 32px;
+												line-height: 32px;
+												display: block;
+												color: #fff;
+												font-size: 14px;
+												font-weight: 700;
+												background: #ff5757;
+												text-align: center;
+												margin-top: 30px;
+											}
+										}
+										
+									}
+									.keepOut{
+										position: absolute;
+										top: 0;
+										left: 0;
+										width: 167px;
+										height: 180px;
+										background: #fff;
+										opacity: .9;
+									}
+								}
+							}
+							.desc{
+								padding: 17px 0 0;
+								color: #5e5e5e;
+								font-size: 12px;
+								text-align: center;
+								line-height: 14px;
+								a{
+									color: #ff5757;
+								}
+							}
+							.smCode{
+								margin-top: 5px;
+								color: #5e5e5e;
+								font-size: 12px;
+								text-align: center;
+								line-height: 14px;
+							}
+							.registerBtn{
+								position: absolute;
+								bottom: 10px;
+								right: 14px;
+								width: 50px;
+								height: 18px;
+								color: #069;
+								font-size: 12px;
+							}
+						}
+						
+						.userLogin{
+							display: none;
+							
+							.userLoginMethod{
+								.errTip{
+									width: 290px;
+									line-height: 22px;
+									background: #fee;
+									color: #e3111e;
+									overflow: hidden;
+									margin: -21px 0 4px 0;
+									z-index:3;
+									visibility: hidden;
+									.icon{
+										width: 14px;
+										height: 14px;
+										float: left;
+										overflow: hidden;
+										margin: 4px 5px 0 10px;
+										background-image: url(../img/png/spr-icon.png);
+										background-position: -41px -54px;
+										display: inline-block;
+									}
+									>div{
+										float: left;
+										width: 260px;
+										p{
+											float: left;
+											margin: 0;
+											font-size: 12px;
+										}
+									}
+								}
+								
+								.loginItem{
+									position: relative;
+									height: 52px;
+									z-index: 11;
+									.clearBtn{
+										width: 12px;
+										height: 12px;
+										position: absolute;
+										top: 15px;
+										right: 18px;
+										overflow: hidden;
+										background-image: url(../img/png/spr-icon.png);
+										background-position: -20px -90px;
+										z-index: 3;
+										display: none;
+									}
+									.dafaultPlaceholder{
+										position: absolute;
+										left: 12px;
+										top: 11px;
+										color: #a5a5a5;
+										font-size: 14px;
+										z-index: 1;
+									}
+									.text{
+										border:1px solid #a5a5a5;
+										position: relative;
+										width: 268px;
+										height: 25px;
+										padding: 8px 10px 7px;
+										background: url(../img/png/capital-tip-common.png) no-repeat -500px 0 transparent;
+										color: #333;
+										font-size: 14px;
+										line-height: 21px;
+										z-index: 2;
+									}
+								}
+								.verifyCodeDiv{
+									.text{
+										width: 138px;
+									}
+									.check{
+										position: relative;
+										display: inline-block;
+										height: 38px;
+										vertical-align: top;
+										margin-left: 7px;
+										.checkPhineCode{
+											display: inline-block;
+											width: 108px;
+											height: 36px;
+											text-align: center;
+											color: #333;
+											font-weight: 400;
+											font-size:12px;
+											line-height: 36px;
+											background: #f8f8f8;
+											border: 1px solid #ddd;
+											padding: 2px 5px;
+										}
+									}
+									
+								}
+								.detailContent{
+									color: #a5a5a5;
+									margin-bottom: 10px;
+									font-weight: 400;
+									font-size: 10px;
+									line-height: 16px;
+									.fontBlink{
+										color: #2875cc;
+									}
+									.fontBlink:hover{
+										text-decoration: underline;
+									}
+								}
+								.loginItemUserpwd{
+									z-index: 10;
+								}
+								.remember{
+									padding: 10px 0 12px;
+									overflow: hidden;
+									line-height: 13px;
+									.left{
+										
+										input{
+											float: left;
+											
+										}
+										label{
+											display: inline-block;
+											margin: 3px 4px 0 0;
+											color: #5e5e5e;
+											font-size: 12px;
+											
+										}
+										
+									}
+									.right{
+										width: 120px;
+										font-size: 12px;
+										.passwordReset{
+											float: left;
+											color: #5e5e5e;
+											cursor: pointer;
+										}
+										.segmentation{
+											float: left;
+											color: #ccc;
+											padding: 0 10px;
+											display: block;
+										}
+										.registerLink{
+											float: left;
+											color: #2875cc;
+										}
+									}
+									
+								}
+								
+								.actions{
+									letter-spacing: 0px;
+									font-size: 12px;
+									.btnLogin{
+										width: 290px;
+										height: 42px;
+										background: #ff5757;
+										font-weight: 500;
+										line-height: 41px;
+										font-size: 18px;
+										color: #fff;
+										text-align: center;
+										cursor: pointer;
+									}
+								}
+								
+							}
+							>p{
+								padding: 10px 0 15px;
+								.switchoverLoginBtn{
+									color: #2875cc;
+									cursor: pointer;
+									font-size: 12px;
+								}
+							}
+						}
+					}
+					
+					.restsLogin{
+						overflow: hidden;
+						clear: both;
+						position: relative;
+						padding: 9px 20px;
+						color: #a5a5a5;
+						background: #fcfcfc;
+						border: 1px solid #f0f0f0;
+						box-sizing: border-box;
+						li{
+							width: 300px;
+							font-size: 12px;
+							line-height: 18px;
+							a{
+								float: left;
+								white-space: nowrap;
+								color: #5e5e5e;
+								padding: 0 8px;
+								margin: 6px 0;
+								cursor: pointer;
+								border-right: 1px solid #e6e6e6;
+							}
+							.restsmeifubao,.restsalipay,.more{
+								border-right:none;
+							}
+							a:hover{
+								color: #e3101e;
+								text-decoration: underline;
+							}
+							.more{
+								position: absolute;
+								top: 14px;
+								right: 20px;
+								width: 19px;
+								height: 19px;
+								padding: 0;
+								margin: 0;
+								background: url(../img/png/login-bg-common.png) 0 0;
+							}
+						}
+						.play{
+							.hide{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}

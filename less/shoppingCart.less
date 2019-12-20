@@ -1,0 +1,962 @@
+@charset "utf-8";
+
+body{
+	overflow-x: hidden;
+}
+
+.warp{
+	.container{
+		.cartEmptyWrap{
+			border: 1px solid #e6e6e6;
+			text-align: center;
+			padding: 56px 0;
+			.cartempty{
+				display: inline-block;
+				vertical-align: middle;
+				width: 71px;
+				height: 54px;
+				background: url(../img/png/sprite.png);
+				background-position: -626px 0;
+				overflow: hidden;
+			}
+			.cartemptytext{
+				display: inline-block;
+				*display: inline;
+				*zoom: 1;
+				text-align: left;
+				vertical-align: middle;
+				margin-left: 10px;
+				font-size: 12px;
+				line-height: 26px;
+				>div{
+					margin-top: 8px;
+					.cartLogintip{
+						padding: 0px 15px 0px 0px;
+						font-size: 12px;
+						color: #333;
+						float: left;
+						.cartLoginBtn{
+							display: inline-block;
+							color: white;
+							background: #e3101e;
+							*display: inline;
+							*zoom: 1;
+							padding: 4px 8px;
+							border-radius: 3px;
+							line-height: 20px;
+						}
+					}
+					>a{
+						color: #069;
+						line-height: 29px;
+						.cartjt{
+							color: #069;
+							line-height: 29px;
+						}
+					}
+				}
+			}
+		}
+		.loginTipCart{
+			color: #333;
+			padding: 10px 0;
+			padding-bottom: 15px;
+			font-size: 12px;
+			.loginTipCartBtn{
+				background: #E3101E;
+				color: #fff;
+				padding:4px 8px;
+				border-radius: 3px;
+				line-height: 20px;
+				display: inline-block;
+			}
+		}
+		.loginTipCartSelect{
+			width: 350px;
+			text-align: right;
+			color: #A5A5A5;
+			padding: 10px 0;
+			font-size: 12px;
+			line-height: 18px;
+			.city{
+				display: inline-block;
+				vertical-align: middle;
+				line-height: 18px;
+				position: relative;
+				.regon{
+					height: 22px;
+					padding: 1px 5px 1px 1px;
+					line-height: 20px;
+					color: #0172d0;
+					border: 1px solid #e5e5e5;
+					display: inline-block;
+					background: #fff;
+					position: relative;
+					.stockaddress{
+						color: #333;
+						padding-right: 16px;
+						background: url(../img/png/new-cart-arrow.png) no-repeat right 5px;
+						max-width: 265px;
+						white-space: nowrap;
+						text-overflow: ellipsis;
+						overflow: hidden;
+					}
+					.gCity{
+						left: auto;
+						right: 0;
+						top: 25.5px;
+						border: 1px solid #dedede;
+						box-shadow: 0 0 5px 1px lightgrey;
+					}
+				}
+			}
+		}
+	}
+	.cartLists{
+		.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7{
+			float: left;
+		}
+		.slide1{
+			text-align: center;
+			width: 40px;
+			position: relative;
+		
+			.checkBoxChose{
+				margin-top: 16px;
+				margin-left: 5px;
+				width: 14px;
+				height: 14px;
+				display: inline-block;
+				overflow: hidden;
+				background: url(../img/png/sprite.png) no-repeat;
+				background-position: -454px -82px;
+				position: relative;
+				input{
+					display: none;
+					position: absolute;
+					top: 0;
+					left: 0;
+					margin: 0;
+					width: 15px;
+					height: 15px;
+				}
+			}
+			.checkBoxNo{
+				width: 12px;
+				height: 12px;
+				border: 1px solid #CCC;
+				margin: 2px 16px;
+				margin-top: 16px;
+				background-color: #FFF;
+				border-radius: 2px;
+				margin-top: 16px;
+				position: relative;
+				input{
+					display: none;
+					position: absolute;
+					top: 0;
+					left: 0;
+					margin: 0;
+					width: 13px;
+					height: 13px;
+				}
+			}
+			
+		}
+		.slide2{
+			width: 91px;
+		}
+		.slide3{
+			width: 389px;
+		}
+		.slide4{
+			width: 155px;
+			padding-left: 22px;
+			box-sizing: border-box;
+		}
+		.slide5{
+			width: 80px;
+		}
+		.slide6{
+			width: 134px;
+			text-align: center;
+		}
+		.slide7{
+			width: 59px;
+		}
+		.cartHeadWrap{
+			.cartMain{
+				height: 44px;
+				line-height: 44px;
+				background: #eee;
+				width: 988px;
+				border: 1px solid #E6E6E6;
+				border-radius: 3px;
+				font-size: 12px;
+				color: #333;
+				
+				
+			}
+		}
+		.cartCenterWrap{
+			.cartShopHeaderBox{
+				.cartShopHeader{
+					height: 38px;
+					line-height: 38px;
+					border: 1px solid #ddd;
+					margin-top: 10px;
+					padding-top: 2px;
+					padding-bottom: 2px;
+					border-radius: 3px 3px 0 0;
+					.slide1{
+						.checkBoxChose{
+							margin-top: 13px;
+							margin-left: 5px;
+						}
+						.checkBoxNo{
+							margin-top: 13px;
+							margin-left: 5px;
+							input{
+								width: 13px;
+								height: 13px;
+							}
+						}
+					}
+					.cI{
+						display:inline-block;
+						overflow: hidden;
+						*zoom: 1;
+						*display: inline;
+						background: url(../img/png/sprite.png) no-repeat;
+					}
+					.slide2{
+						height: 38px;
+						width: 332px;
+						.cartShopName{
+							color: #333;
+							display: inline-block;
+							max-width: 130px;
+							height: 38px;
+							line-height: 38px;
+							white-space: nowrap;
+							text-overflow: ellipsis;
+							font-weight: 700;
+							font-size: 12px;
+							overflow: hidden;
+						}
+						.carKf{
+							display: inline-block;
+							height: 38px;
+							line-height: 38px;
+							vertical-align: top;
+							color: #ccc;
+							font-size: 12px;
+							margin-left: 8px;
+							box-sizing: border-box;
+							.kficon{
+								width: 20px;
+								height: 19px;
+								background-position: -327px -64px;
+								vertical-align: middle;
+							}
+							.contactFont{
+								position: relative;
+								display: inline-block;
+								color: #333;
+								cursor: pointer;
+							}
+						}
+					}
+					.couponDesc{
+						margin-right: 368px;
+						.box{
+							position: relative;
+							font-size: 12px;
+							.attention{
+								margin: 0 2px -2px 0px;
+								border-radius: 5px;
+								width: 14px;
+								height: 14px;
+								background-position: -468px -82px;
+								
+							}
+							.tip{
+								color: #5E5E5E;
+								text-align: right;
+							}
+							.tipDesc{
+								position: absolute;
+								left: -74px;
+								top: 38px;
+								line-height: 30px;
+								width: 352px;
+								height: 70px;
+								font-size: 12px;
+								color: #333;
+								background: #fff;
+								z-index: 101;
+								box-shadow: 0 0 23px 1px #ccc;
+								display: none;
+								.whiteArrow{
+									position: absolute;
+									top: -16px;
+									left: 69px;
+									height: 20px;
+									font-size: 40px;
+									color: #fff;
+									overflow: hidden;
+								}
+								.txtTip{
+									line-height: normal;
+									margin: 20px;
+								}
+							}
+						}
+					}
+				}
+			}
+			.cartShopGoodsBox{
+				border: 1px solid #e6e6e6;
+				.cartShopGoods{
+					border-bottom: none;
+					position: relative;
+					
+					.slide1,.slide2,.slide3,.slide4,.slide5,.slide6,.slide7,.slide8{
+						border-top: 1px solid #eee;
+						padding: 20px 0;
+						float: left;
+					}
+					.slide1{
+						border-top: none;
+						position: relative;
+						z-index: 1;
+						text-align: center;
+						.checkBoxChose{
+							margin-top: 0px;
+							margin-left: 5px;
+						}
+						.checkBoxNo{
+							margin-top:0px;
+							margin-left: 5px;
+							input{
+								width: 13px;
+								height: 13px;
+							}
+						}
+					}
+					.slide2{
+						height: 82px;
+						border: none;
+						a{
+							border: 1px solid #e6e6e6;
+							display: block;
+							width: 80px;
+							height: 80px;
+							position: relative;
+							overflow: hidden;
+							img{
+								width: 80px;
+								height: 80px;
+								position: relative;
+								overflow: hidden;
+								vertical-align: middle;
+							}
+						}
+					}
+					.shop{
+						font-size: 12px;
+						.cartBtnRed{
+							background: #e3101e;
+							border-color: #e3101e;
+						}
+						.content{
+							.slide3{
+								padding: 20px 0 5px;
+								width: 208px;
+								border: none;
+								
+								.goodName{
+									height: 38px;
+									overflow: hidden;
+									line-height: 19px;
+									a{
+										color: #333;
+									}
+									
+								}
+								.supportServer{
+									.serverIcon{
+										border-radius: 5px;
+										width: 16px;
+										height: 16px;
+										background: url(../img/png/sprite.png) no-repeat;
+										overflow: hidden;
+										margin-right: 5px;
+										float: left;
+										background-position: -892px -32px;
+									}
+								}
+							}
+							.slide4{
+								padding: 10px 0 20px;
+								width: 180px;
+								border: none;
+								position: relative;
+								.carGoodPro{
+									width: 160px;
+									padding: 8px 0 10px 20px;
+									color: #a7a7a7;
+									.carText{
+										cursor: pointer;
+										max-height: 84px;
+										overflow: hidden;
+										.cartSalesProItem{
+											.cartGoodkey,.cartGoodVal{
+												white-space: nowrap;
+												text-overflow: ellipsis;
+												vertical-align: middle;
+												overflow: hidden;
+												*display: inline;
+												*zoom: 1;
+												display: inline-block;
+											}
+											.cartGoodkey{
+												max-width: 52px;
+											}
+											.cartGoodVal{
+												max-width: 105px;
+											}
+										}
+									}
+									.cartCoupon{
+										z-index: auto;
+										width: 46px;
+										margin: 5px 0 0 0;
+										height: 24px;
+										line-height: 24px;
+										color: #E3101E;
+										*display: inline;
+										*zoom: 1;
+										display: inline-block;
+										position: relative;
+										.popup{
+											color: #e3101e;
+											background: rgba(227,16,30,.1);
+											height: 20px;
+											line-height: 20px;
+											padding-left: 6px;
+											border-radius: 2px;
+											cursor: pointer;
+											.cartArrow{
+												display: inline-block;
+												position: relative;
+												top: -2px;
+												width: 9px;
+												height: 6px;
+												background: url(../img/png/sprite.png) no-repeat;
+												background-position: -934px -56px;
+												overflow: hidden;
+												cursor: pointer;
+											}
+										}
+									}
+									.cartCouponDown{
+										position: absolute;
+										top: 88px;
+										left: 0px;
+										width: 400px;
+										margin-top: -4px;
+										z-index: 2;
+										display: none;
+										.salepropsBox{
+											height: 161px;
+											.salepropsWarp{
+												padding: 15px 20px;
+												color: #333;
+												border: 1px solid #ddd;
+												background: #fff;
+												z-index: 2;
+												.salepropsArrow{
+													position: absolute;
+													left: 0;
+													top: 0;
+													i{
+														position: absolute;
+														top: -13px;
+														left: 30px;
+														height: 20px;
+														line-height: 24px;
+														color: #ddd;
+														font-size: 30px;
+														overflow: hidden;
+													}
+													.cartArrowCover{
+														position: absolute;
+														top: -11px;
+														left: 30px;
+														height: 20px;
+														line-height: 24px;
+														font-size: 30px;
+														overflow: hidden;
+														color: #fff;
+													}
+												}
+												.salepropsArrowClose{
+													position: absolute;
+													top: 12px;
+													right: 12px;
+													width: 12px;
+													height: 12px;
+													cursor: pointer;
+													line-height: 29px;
+													background: url(../img/png/sprite.png) no-repeat;
+													background-position: -925px -80px;
+													overflow: hidden;
+													
+												}
+												.cspBox{
+													margin-top: 10px;
+													.item{
+														>dt{
+															float: left;
+															width: 24px;
+															white-space: nowrap;
+															text-overflow: ellipsis;
+															vertical-align: middle;
+															display: inline-block;
+															overflow: hidden;
+														}
+														>dd{
+															float: left;
+															max-width: 310px;
+															.salepropsVal{
+																position: relative;
+																display: inline-block;
+																*display: inline;
+																*zoom: 1;
+																margin-left: 7px;
+																line-height: 26px;
+																margin-bottom: 16px;
+																padding: 0 8px;
+																background: #fff;
+																border: 1px solid #ccc;
+																.choseIcon{
+																	display: block;
+																	position: absolute;
+																	bottom: 0;
+																	right: 0;
+																	line-height: 29px;
+																	width: 14px;
+																	height: 14px;
+																	background: url(../img/png/sprite.png) no-repeat;
+																	background-position: -894px -64px;
+																}
+															}
+															.active{
+																border: 2px solid #E3101E;
+																color: #333;
+															}
+														}
+													}
+												}
+												.cspBoxBtnGroup{
+													height: auto;
+													overflow: hidden;
+													text-align: center;
+													.cartBtn{
+														display: inline-block;
+														*display: inline;
+														*zoom: 1;
+														width: 60px;
+														height: 25px;
+														line-height: 25px;
+														overflow: hidden;
+														border: 1px solid #e6e6e6;
+														color: #333;
+													}
+													.cartBtnRed{
+														color: #fff;
+													}
+												}
+											}
+										}
+									}
+								}
+							}
+							
+							.slide5{
+								border: none;
+								min-height: 47px;
+								width: 155px;
+								.cartGoodPrice{
+									padding: 0 40px 0 22px;
+									color: #333;
+								}
+							}
+							.slide6{
+								border: none;
+								text-align: center;
+								width: 80px;
+								.cartCount{
+									width: 50px;
+									display: inline-block;
+									padding: 0 15px;
+									overflow: hidden;
+									position: relative;
+									text-align: center;
+									.guiCountbtn{
+										position: absolute;
+										top: 0;
+										line-height: 20px;
+										color: #666;
+										border: 1px solid #ccc;
+										width: 15px;
+										height: 20px;
+										font-weight: bold;
+										text-align: center;
+										display: block;
+										background: #fff;
+									}
+									.guiCountbtnSub{
+										left: 0;
+									}
+									.guiCountbtnadd{
+										right: 0;
+									}
+									.guiDisabled{
+										color: #ddd;
+										cursor: default;
+									}
+									.guiCountInput{
+										width: 100%;
+										height: 20px;
+										border: 1px solid #ccc;
+										border-right: none;
+										border-left: none;
+										text-align: center;
+										background: #fff;
+										margin: 0;
+										padding: 0;
+										.dytest{
+											width: 100%;
+											height: 20px;
+											margin: 0;
+											padding: 0;
+											overflow: hidden;
+											text-align: center;
+										}
+									}
+								}
+								
+								.red{
+									padding-top: 5px;
+									padding-bottom: 3px;
+									line-height: 14px;
+									color: #E3101E;
+								}
+								
+							}
+							.slide7{
+								border: none;
+								width: 154px;
+								font-weight: 700;
+								.cartGoodAmount{
+									position: relative;
+									font-size: 13px;
+									text-align: right;
+									padding-right: 70px;
+									white-space: nowrap;
+								}
+							}
+							.slide8{
+								border: none;
+								width: 79px;
+								font-size: 12px;
+								.cartGoodFundel{
+									margin-bottom: 2px;
+									padding-top: 1px;
+									a{
+										color: #666;
+									}
+									a:hover{
+										color: #E3101E;
+									}
+								}
+								.cartGoodFun{
+									margin-bottom: 2px;
+									padding-top: 1px;
+									a{
+										color: #666;
+									}
+									a:hover{
+										color: #E3101E;
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		
+		
+		.cartBottomWrap{
+			margin-top: 20px;
+			.info{
+				background: #F3F3F3;
+				
+				.container{
+				
+					position: relative;
+					.selectGoodswarp{
+						display: none;
+						position: absolute;
+						top: -130px;
+						left: 0;
+						padding: 10px;
+						width: 970px;
+						height: 104px;
+						z-index: 1000;
+						background-color: rgba(165,165,165,.8);
+						.headerTitle{
+							font-size: 12px;
+							color: #fff;
+							.carSelectNum{
+								margin: 0 3px;
+								font-weight: 700;
+								color: #E3101E;
+							}
+							
+						}
+						.bottomGoodsContent{
+							
+							position: relative;
+							.bottomGoodsView{
+								
+								position: relative;
+								width: 910px;
+								height: 80px;
+								margin: 6px 30px 10px;
+								overflow: hidden;
+								ul{
+									position: absolute;
+									width: 1910px;
+									height: 80px;
+									overflow: hidden;
+									left: 0;
+									li:first-of-type{
+										margin-left: 0;
+									}
+									li{
+										float: left;
+										position: relative;
+										a{
+											width: 80px;
+											height: 80px;
+											background: #eee;
+											display: block;
+											img{
+												width: 80px;
+												height: 80px;
+												display: block;
+												vertical-align: middle;
+											}
+										}
+										.grayCheckboxChose{
+											cursor: progress;
+											display: inline-block;
+											*display: inline;
+											*zoom: 1;
+											overflow: hidden;
+											position: absolute;
+											background: red;
+											top: 2px;
+											right: 2px;
+											width: 12px;
+											height: 12px;
+											background: url(../img/png/sprite.png);
+											background-position: -287px -84px;
+											input{
+												display: none;
+												position: absolute;
+												top: 0;
+												left: 0;
+												margin: 0;
+												width: 13px;
+												height: 13px;
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+					.selectGoodswarp::before{
+						content: '';
+						position: absolute;
+						top: 124px;
+						right: 190px;
+						width: 12px;
+						height: 6px;
+						background: url(../img/png/sprite.png) no-repeat;
+						background-position: -937px -74px;
+						overflow: hidden;
+					}
+					.slide1,.slide2,.slide3,.slide4,.slide5{
+						float: left;
+					}
+					.slide1,.slide2{
+						padding-top: 19px;
+						line-height: 22px;
+					}
+					.slide1,.slide4{
+						text-align: center;
+					}
+					.slide1{
+						width: 40px;
+						position: relative;
+						.checkBoxChose{
+							margin-top: 5px;
+							margin-left: 5px;
+							width: 14px;
+							height: 14px;
+							display: inline-block;
+							overflow: hidden;
+							background: url(../img/png/sprite.png) no-repeat;
+							background-position: -454px -82px;
+							position: relative;
+							input{
+								display: none;
+								position: absolute;
+								top: 0;
+								left: 0;
+								margin: 0;
+								width: 15px;
+								height: 15px;
+							}
+						}
+						.checkBoxNo{
+							width: 12px;
+							height: 12px;
+							border: 1px solid #CCC;
+							margin: 0px 16px;
+							background-color: #FFF;
+							border-radius: 2px;
+							margin-top: 5px;
+							position: relative;
+							input{
+								display: none;
+								position: absolute;
+								top: 0;
+								left: 0;
+								margin: 0;
+								width: 13px;
+								height: 13px;
+							}
+						}
+					}
+					.slide2{
+						width: 91px;
+						font-size: 12px;
+						a{
+							margin-left: 20px;
+							color: #333;
+							margin-left: 3px;
+							*margin-left: 0;
+						}
+						
+					}
+					.slide3{
+						width: 532px;
+						line-height: 22px;
+						padding-right: 10px;
+						padding-left: 180px;
+						text-align: right;
+						font-size: 12px;
+						.cartSelectGood{
+							display: inline-block;
+							*display: inline;
+							*zoom: 1;
+							position: relative;
+							cursor: pointer;
+							margin-right: 10px;
+							vertical-align: top;
+							line-height: 22px;
+							padding-top: 19px;
+							.carSelectNum{
+								color: #E3101E;
+								font-weight: 900;
+								font-size: 14px;
+							}
+							.arrowBottom{
+								width: 7px;
+								height: 4px;
+								background: url(../img/png/sprite.png) no-repeat;
+								background-position: -148px -92px;
+								overflow: hidden;
+								margin-bottom: 3px;
+								display: inline-block;
+							}
+						}
+						.totalPrice{
+							display: inline-block;
+							*display: inline;
+							*zoom: 1;
+							overflow: hidden;
+							vertical-align: middle;
+							padding-top: 19px;
+							dl{
+								overflow: hidden;
+								dt{
+									width: 120px;
+									text-align: right;
+									float: left;
+								}
+								dd{
+									font-size: 18px;
+									font-weight: 900;
+									color: #E3101E;
+									float: left;
+								}
+							}
+						}
+					}
+					.slide4{
+						width: 136px;
+						padding-left: 0;
+						a{
+							background: #ccc;
+							display: block;
+							height: 60px;
+							line-height: 60px;
+							text-align: center;
+							color: #fff;
+							font-size: 16px;
+							text-decoration: none;
+							span{
+								font-size: 16px;
+								font-weight: 700;
+								
+								.arrowRightWhite{
+									margin-left: 6px;
+									width: 12px;
+									height: 13px;
+									background: url(../img/png/sprite.png) no-repeat;
+									background-position: -245px -84px;
+									display: inline-block;
+									overflow: hidden;
+									
+								}
+							}
+							.btnLoading{
+								display: none;
+							}
+							
+						}
+					}
+					
+				}
+			}
+		}
+	}
+}

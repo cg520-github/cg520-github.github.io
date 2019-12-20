@@ -1,0 +1,114 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "90509",
+      "name": "价格保护",
+      "font_class": "jiagebaohu",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "214895",
+      "name": "帮助",
+      "font_class": "help",
+      "unicode": "e621",
+      "unicode_decimal": 58913
+    },
+    {
+      "icon_id": "545563",
+      "name": "生日礼包",
+      "font_class": "shengrilibao",
+      "unicode": "e622",
+      "unicode_decimal": 58914
+    },
+    {
+      "icon_id": "545568",
+      "name": "专属阶梯价",
+      "font_class": "zhuanshujietijia",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "749846",
+      "name": "换货保障",
+      "font_class": "huanhuobz",
+      "unicode": "e653",
+      "unicode_decimal": 58963
+    },
+    {
+      "icon_id": "882245",
+      "name": "美豆",
+      "font_class": "meidou",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "1098540",
+      "name": "抽奖",
+      "font_class": "choujiang",
+      "unicode": "e649",
+      "unicode_decimal": 58953
+    },
+    {
+      "icon_id": "1115074",
+      "name": "手机",
+      "font_class": "shouji",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "1186064",
+      "name": "更多精彩",
+      "font_class": "gengduojingcai",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "1242376",
+      "name": "找服务",
+      "font_class": "zhaofuwu",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "2209919",
+      "name": "手机",
+      "font_class": "shouji1",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "2325917",
+      "name": "客服",
+      "font_class": "kefu",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "7644492",
+      "name": "领劵中心",
+      "font_class": "lingjuanzhongxin",
+      "unicode": "e64b",
+      "unicode_decimal": 58955
+    },
+    {
+      "icon_id": "9005577",
+      "name": "会员",
+      "font_class": "huiyuan",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "9864999",
+      "name": "流量",
+      "font_class": "liuliang2",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    }
+  ]
+}

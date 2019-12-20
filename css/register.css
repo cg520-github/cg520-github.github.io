@@ -1,0 +1,649 @@
+@charset "utf-8";
+@keyframes dot {
+  0%,
+  100% {
+    opacity: .7;
+  }
+  20%,
+  80% {
+    opacity: 0;
+  }
+}
+body {
+  overflow-x: hidden;
+}
+.warp .header .head {
+  position: relative;
+  height: 120px;
+  vertical-align: middle;
+  z-index: 980;
+}
+.warp .header .head a {
+  color: #2875cc;
+}
+.warp .header .head .logo {
+  margin: 18px 40px 0 0;
+  float: left;
+}
+.warp .header .head .logo a {
+  width: 300px;
+  height: 62px;
+  margin-top: 16px;
+  display: block;
+  text-indent: -99px;
+  overflow: hidden;
+  background: url(../img/png/registerlogo.png) no-repeat;
+}
+.warp .header .head .logoTitle {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  z-index: 1000;
+  font-size: 12px;
+}
+.warp .header .head .logoTitle a {
+  margin-left: 3px;
+}
+.warp .contain {
+  border-top: 1px solid #dd00a7;
+}
+.warp .contain .step {
+  width: 376px;
+  position: relative;
+  margin: 0 auto;
+  text-align: left;
+}
+.warp .contain .step .stepSlide {
+  height: 50px;
+  margin: 95px 0 40px;
+  background: #fff;
+}
+.warp .contain .step .stepSlide ul {
+  float: left;
+  width: 100%;
+  height: 3px;
+}
+.warp .contain .step .stepSlide ul li {
+  width: 133px;
+  float: left;
+  height: 3px;
+  background: #e0e0e0;
+  margin: 0 40px 0 35px;
+}
+.warp .contain .step .stepSlide ul li:last-of-type {
+  margin: 0;
+}
+.warp .contain .step .stepSlide > div .stepIcon {
+  position: absolute;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  border-radius: 100%;
+  border: 3px solid #E0E0E0;
+  font-weight: 700;
+  font-size: 12px;
+  color: #E0E0E0;
+  text-align: center;
+  background: #fff;
+}
+.warp .contain .step .stepSlide > div .stepIcon1 {
+  left: 0;
+  top: -14px;
+}
+.warp .contain .step .stepSlide > div .stepIcon2 {
+  left: 50%;
+  top: -14px;
+  margin-left: -15px;
+}
+.warp .contain .step .stepSlide > div .stepIcon3 {
+  left: 100%;
+  top: -14px;
+  margin-left: -30px;
+}
+.warp .contain .step .stepSlide > div .info {
+  position: absolute;
+  margin-top: 25px;
+  margin-left: 6px;
+  color: #999;
+  font-size: 12px;
+  width: 200px;
+}
+.warp .contain .step .stepSlide > div .info1 {
+  left: -6%;
+}
+.warp .contain .step .stepSlide > div .info2 {
+  left: 39%;
+}
+.warp .contain .step .stepSlide > div .info3 {
+  left: 89%;
+}
+.warp .contain .step .stepSlide .active .stepIcon {
+  border: 3px solid #FF4C4C;
+  color: #FF4C4C;
+}
+.warp .contain .step .stepSlide .active .info {
+  color: #FF4C4C ;
+}
+.warp .contain .step .stepContent {
+  width: 400px;
+  margin-left: 25px;
+}
+.warp .contain .step .stepContent .box .form-group {
+  position: relative;
+  margin-bottom: 30px;
+  clear: both;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox {
+  position: absolute;
+  top: -265px;
+  left: 0;
+  width: 270px;
+  padding: 15px 15px 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  background: #fff;
+  z-index: 1;
+  display: none;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .title {
+  position: relative;
+  top: -7px;
+  left: 0;
+  font-size: 12px;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .close {
+  top: 13px!important;
+  display: block!important;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha {
+  width: 270px;
+  height: 200px;
+  line-height: 20px;
+  color: #000;
+  font-size: 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp {
+  line-height: 20px;
+  font-size: 12px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  -ms-user-select: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  background: #fff;
+  text-align: left;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box {
+  position: relative;
+  background: #fff;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .content {
+  position: relative;
+  width: 100%;
+  height: 160px;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .content .subSide {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  width: 50px;
+  height: 50px;
+  margin-top: 57px;
+  z-index: 10;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .content .subSide img {
+  width: 45.225px;
+  height: 50.25px;
+  display: inline;
+  max-width: none;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .content .basic {
+  width: 100%;
+  height: 150px;
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .content .basic .loading {
+  height: 150px;
+  line-height: 150px;
+  color: #fff;
+  background: #ccc;
+  text-align: center;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .content .basic .Bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .content .init {
+  position: absolute;
+  top: 107px;
+  left: 0;
+  width: 100%;
+  line-height: 22px;
+  font-size: 18px;
+  color: #fff;
+  text-shadow: 0 0 5px #000;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .content .init img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 22px;
+  max-width: none;
+  display: inline;
+  margin: 10px 0 0 20px;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .content .init span {
+  position: absolute;
+  left: 49px;
+  top: 0;
+  color: #fff;
+  margin-top: 10px;
+  font-weight: 400;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .content .refresh {
+  position: absolute;
+  top: 107px;
+  left: 0;
+  width: 100%;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .content .refresh img {
+  position: absolute;
+  right: 4px;
+  top: 0;
+  opacity: .6;
+  height: 25px;
+  margin: 10px 0 0 20px;
+  cursor: pointer;
+  width: auto;
+  display: inline;
+  max-width: none;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar {
+  position: relative;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  color: #999;
+  transition: 0s;
+  -webkit-transition: 0s;
+  font-size: 14px;
+  -ms-touch-action: none;
+  touch-action: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #d2d2d2;
+  border-radius: 4px;
+  background: #f7f7f7;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .slide {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  width: 58px;
+  height: 38px;
+  border-radius: 4px;
+  background: #fff;
+  cursor: move;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  z-index: 10;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .slide .MoveAnimatedBtndefault span {
+  background: #fff;
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 44%;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .slide .MoveAnimatedBtndefault span:nth-of-type(1) {
+  left: 25.3%;
+  animation: dot .8s infinite;
+  -webkit-animation: dot .8s infinite;
+  opacity: 0\9\0;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .slide .MoveAnimatedBtndefault span:nth-of-type(2) {
+  left: 35.2%;
+  animation: dot .8s .1s infinite;
+  -webkit-animation: dot .8s .1s infinite;
+  opacity: 0;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .slide .MoveAnimatedBtndefault span:nth-of-type(3) {
+  left: 45.5%;
+  animation: dot .8s .2s infinite;
+  -webkit-animation: dot .8s .2s infinite;
+  opacity: 0;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .slide .MoveAnimatedBtndefault span:nth-of-type(4) {
+  width: 12px;
+  height: 20px;
+  top: 25%;
+  left: 53.5%;
+  animation: dot .8s .4s infinite;
+  -webkit-animation: dot .8s .4s infinite;
+  opacity: 0;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .slide .MoveAnimatedBtndefault img {
+  width: 64px;
+  height: 46px;
+  margin: -3px 0 0 -3px;
+  vertical-align: middle;
+  display: inline;
+  max-width: none;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .slide .MoveAnimatedBtnacitve {
+  width: 64px;
+  height: 46px;
+  margin: -3px 0 0 -3px;
+  max-width: none;
+  display: none;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .slideCover {
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  height: 38px;
+  opacity: .5;
+  background: #a9ffe5;
+  border: 1px solid #00f4ab;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  z-index: 1;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .barInform .langLoading {
+  position: relative;
+  color: #999;
+  vertical-align: middle;
+  margin: 0 7px 0 22px;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .barInform img {
+  width: 11px;
+  height: 8px;
+  margin: 0;
+  vertical-align: middle;
+  display: inline-block;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .verifyingSuccess {
+  height: 38px;
+  border-radius: 4px;
+  transition: 0s;
+  background: rgba(169, 255, 255, 0.5);
+  display: none;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .verifyingSuccess span {
+  color: #01c7b5;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .verifyingfail,
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .verifyingLoadfail {
+  position: relative;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  background: #f7f7f7;
+  color: #000;
+  border-radius: 4px;
+  transition: 0s;
+  font-size: 14px;
+  display: none;
+}
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .verifyingfail a:hover,
+.warp .contain .step .stepContent .box .form-group .jigsawBox .captcha .captchaWarp .mainBox .box .bar .verifyingLoadfail a:hover {
+  color: #2875cc;
+}
+.warp .contain .step .stepContent .box .form-group .wbtn1 {
+  width: 300px!important;
+}
+.warp .contain .step .stepContent .box .form-group .button {
+  display: inline-block;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.warp .contain .step .stepContent .box .form-group .button[disabled] {
+  background: #f6f6f6;
+  border: 1px solid #e6e6e6;
+  color: #999;
+  cursor: not-allowed;
+}
+.warp .contain .step .stepContent .box .form-group .button[disabled]:hover {
+  border: 1px solid #e6e6e6;
+  color: #999;
+}
+.warp .contain .step .stepContent .box .form-group .button:hover {
+  border: 1px solid #FF4C4C;
+  color: #FF4C4C;
+}
+.warp .contain .step .stepContent .box .form-group .controlColBtn-1 {
+  float: left;
+  width: 130px;
+}
+.warp .contain .step .stepContent .box .form-group .codeBtn {
+  padding: 12px 10px;
+  color: #555;
+  background: #fff;
+  border: 1px solid #ddd;
+  font-size: 12px;
+}
+.warp .contain .step .stepContent .box .form-group .verificationBtn {
+  color: #555;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 12px 10px;
+}
+.warp .contain .step .stepContent .box .form-group .close {
+  position: absolute;
+  top: 18px;
+  left: 274px;
+  width: 11px;
+  height: 11px;
+  background-image: url(../img/png/newRegister.png);
+  background-position: -32px 0;
+  cursor: pointer;
+  display: none;
+}
+.warp .contain .step .stepContent .box .form-group .correct {
+  position: absolute;
+  top: 15px;
+  left: 274px;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/png/newRegister.png);
+  background-position: -214px 0;
+  display: none;
+}
+.warp .contain .step .stepContent .box .form-group .tips {
+  position: absolute;
+  color: #FF4C4C;
+  font-size: 13px;
+}
+.warp .contain .step .stepContent .box .form-group .form-control {
+  width: 300px;
+  padding: 12px 10px;
+  border: 1px solid #ccc;
+  color: #999;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.warp .contain .step .stepContent .box .form-group .form-control:hover {
+  border: 1px solid #000;
+  color: #000;
+}
+.warp .contain .step .stepContent .box .form-group .controlCol-1 {
+  float: left;
+  width: 160px;
+  margin-right: 10px;
+}
+.warp .contain .step .stepContent .box .form-group .info {
+  position: absolute;
+  top: 48px;
+  color: #555;
+  font-size: 13px;
+}
+.warp .contain .step .stepContent .box .form-group .tipsTop50 {
+  top: 48px;
+}
+.warp .contain .step .stepContent .box .code {
+  display: none;
+}
+.warp .contain .step .stepContent .box .form-group-submit {
+  margin: 50px 0 20px;
+}
+.warp .contain .step .stepContent .box .form-group-submit .button {
+  display: block;
+  width: 300px!important;
+  color: #fff;
+  background: #FF4C4C;
+  border: 1px solid #ee3b3b;
+  padding: 9px 10px;
+  font-size: 18px;
+  box-sizing: border-box;
+  text-align: center;
+}
+.warp .contain .step .stepContent .box .form-group-submit .button:hover {
+  opacity: .9;
+}
+.warp .contain .step .stepContent .box .businessRegisterLink {
+  margin-bottom: 70px;
+  clear: both;
+  overflow: hidden;
+  font-weight: 400;
+}
+.warp .contain .step .stepContent .box .businessRegisterLink i {
+  float: left;
+  margin: 2px 5px 0 0;
+}
+.warp .contain .step .stepContent .box .businessRegisterLink a {
+  font-size: 14px;
+  color: #2875cc;
+}
+.warp .contain .step .stepContent .box .businessRegisterLink .company {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url(../img/png/newRegister.png);
+  background-position: -84px 0;
+  cursor: pointer;
+}
+.mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9998;
+  background: rgba(0, 0, 0, 0.15);
+  opacity: .3;
+  display: none;
+}
+.registrationProtocol {
+  position: absolute;
+  left: 50%;
+  top: 100px;
+  display: block;
+  width: 890px;
+  height: 500px;
+  margin-left: -445px;
+  background: #fff;
+  padding: 16px 0 5px 0;
+  border: 1px solid #eee;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  float: left;
+  z-index: 9999;
+  display: none;
+}
+.registrationProtocol .closeUc {
+  width: 12px;
+  height: 12px;
+  float: right;
+  margin: -7px 10px 0 0;
+  color: #2875cc;
+  font-size: 13px;
+  cursor: pointer;
+}
+.registrationProtocol .box {
+  padding: 0 35px;
+}
+.registrationProtocol .box h5 {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  text-align: center;
+  padding: 7px 0 8px 0;
+}
+.registrationProtocol .box p {
+  font-size: 12px;
+  color: #585858;
+  line-height: 24px;
+}
+.registrationProtocol .box p b {
+  font-weight: bold;
+}
+.registrationProtocol .box .protocol {
+  padding-top: 15px;
+}
+.registrationProtocol .box .protocol a {
+  display: inline-block;
+  color: #2875CC;
+  font-size: 13px;
+  padding-bottom: 5px;
+}
+.registrationProtocol .box .protocol > div {
+  width: 795px;
+  height: 75px;
+  overflow-y: auto;
+}
+.registrationProtocol .box .protocol > div .btline {
+  font-weight: 700;
+}
+.registrationProtocol .box .protocol > div .indent {
+  text-indent: 2em;
+}
+.registrationProtocol .box .protocolBtn {
+  text-align: center;
+  margin: 20px 0 0 308px;
+}
+.registrationProtocol .box .protocolBtn .inpNoBtn {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  color: #555;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #cacccf;
+  background: #fff;
+  padding: 0 20px;
+  margin-right: 20px;
+}
+.registrationProtocol .box .protocolBtn .inpYesBtn {
+  float: left;
+  height: 28px;
+  line-height: 28px;
+  color: #ff4c4c;
+  font-size: 14px;
+  border-radius: 3px;
+  border: 1px solid #ff4c4c;
+  background: #fff;
+  padding: 0 20px;
+  margin-right: 20px;
+}

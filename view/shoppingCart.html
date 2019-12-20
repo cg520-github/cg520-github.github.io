@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- 编码 -->
+		<meta charset="utf-8" />
+		<!-- 标题 -->
+		<title>我的购物车_国美</title>
+		<!-- 缓存 -->
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<!-- 描述 -->
+		<meta name="description" content="国美(Gome.com.cn)国美电器唯一官方网上商城，中国领先的专业家电网购平台.全球品牌电视、洗衣机、电脑、手机、数码、空调、电脑配件、生活电器、网络产品等正品行货，更低价格，更快送达，为您提供便捷、诚信的服务.">
+		<!-- 关键字 -->
+		<meta name="Keyword~s" content="国美,国美在线,国美电器,国美官方旗舰店,国美电器网上商城,电视,洗衣机,电脑,手机,数码,空调,电脑配件,生活电器">
+		<!-- 渲染引擎 -->
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=EDGE">
+		<!-- 标题log -->
+		<link rel="shortcut icon" href="../img/icon/favicon.ico" type="image/x-icon">
+		<!-- 样式 -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/reset.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public.css" />
+		<link rel="stylesheet" type="text/css" href="../css/public2.css" />
+		<link rel="stylesheet" type="text/css" href="../css/shoppingCart.css" />
+		<link rel="stylesheet" type="text/css" href="../css/font.css" />
+		<!-- js -->
+		<script src="https://unpkg.com/swiper/js/swiper.min.js"> </script>
+		<script src="../js/data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/city-picker.data.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/public.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/storage.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/shoppingCart.js" type="text/javascript" charset="utf-8"></script>
+		
+	</head>
+	<body>
+		<div class="warp">
+			<!-- 头部 -->
+			<div class="header">
+
+				<div class="nav">
+					<div class="content wbox">
+						<ul class="leftList">
+							<li class="gomeiUser">
+								<b class="loginDivName">
+									<a href="#" target="_blank">国美会员</a>
+									<i></i>
+								</b>
+							</li>
+							<li class="loginDivLink">
+								<a rel="loginLink" href="login.html">登录</a>
+
+							</li>
+							<li class="registerDivLink">
+								<a class="registerLink" href="#">注册有礼<i></i></a>
+							</li>
+						</ul>
+
+						<ul class="rightList">
+							<li class="orderGoods">
+								<a href="#">我的订单</a>
+							</li>
+							<li class="myGome">
+								<b>
+									<a href="#" target="_blank">我的国美</a>
+									<i></i>
+								</b>
+
+							</li>
+							<li class="enterpriseProcurement">
+								<b>
+									<a href="#" target="_blank">企业采购</a>
+									<i></i>
+								</b>
+								<div class="dropdown">
+									<a class="qrcode"></a>
+								</div>
+							</li>
+							<li class="serviceCentre">
+								<b>
+									<em class="icon">&#xe638;</em>
+									<a href="#" target="_blank">服务中心</a>
+									<i></i>
+								</b>
+							</li>
+							<li class="siteMap">
+								<b>
+									<a href="#" target="_blank">网站导航</a>
+									<i></i>
+								</b>
+							</li>
+							<li class="phoneGome">
+								<b>
+									<em class="icon">&#xe637;</em>
+									<a href="#" target="_blank">手机国美</a>
+									<i></i>
+								</b>
+								<div class="dropdown">
+									<a class="qrcode"></a>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<div class="head wbox990">
+					<div class="logo">
+						<a href="../index.html" target="_self">
+							<h1></h1>
+						</a>
+					</div>
+					<div class="headTitle">购物车</div>
+				</div>
+			</div>
+
+			<div class="container wbox990 clearContent">
+				<div class="cartEmptyWrap">
+					<div class="cartempty"></div>
+					<div class="cartemptytext">
+						购物车内暂无商品，登录后将显示您之前加入的商品
+						<br>
+						<div>
+							<div class="cartLogintip">
+								<a class="cartLoginBtn" href="javascript:;">登录</a>
+							</div>
+							<a href="login.html">
+								挑选商品<span class="cartjt">&gt;</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="loginTipCart fl">
+					您还没有登录！登录后购物车的商品将保存到您账号中
+					<a href="" class="loginTipCartBtn">
+						立即登录
+					</a>
+				</div>
+				<div class="loginTipCartSelect fr">
+					配送至：
+					<div class="city">
+						<span class="regon">
+							<a class="stockaddress" href="javascript:;">江阳区</a>
+							<div class="gCity">
+								<div class="select clearContent">
+									<a href="javascript:;" class="cur">
+										<b>选择省</b>
+										<i></i>
+									</a>
+									<a href="javascript:;">
+										<b>选择市</b>
+										<i></i>
+									</a>
+									<a href="javascript:;">
+										<b>选择区</b>
+										<i></i>
+									</a>
+								</div>
+								<div class="cityMBox">
+									<div class="bctBox"></div>
+									<div class="bctBox" style="display: none;">暂无数据，请选择省</div>
+									<div class="bctBox" style="display: none;">暂无数据，请选择省和市</div>
+								</div>
+							</div>
+						</span>
+					</div>
+				</div>
+			</div>
+
+			<div class="cartLists">
+				<div class="wbox990 cartHeadWrap">
+					<div class="cartMain clearContent">
+						<div class="slide1">
+							<div class="checkBoxNo">
+								<input type="checkbox">
+							</div>
+						</div>
+						<div class="slide2">全选</div>
+						<div class="slide3">商品信息</div>
+						<div class="slide4">单价</div>
+						<div class="slide5">数量</div>
+						<div class="slide6">小计</div>
+						<div class="slide7">操作</div>
+					</div>
+				</div>
+				<div class="wbox990 cartCenterWrap">
+				</div>
+				<div class="cartBottomWrap clearContent">
+					<div class="info">
+						<div class="container wbox990 clearContent">
+							<div class="selectGoodswarp">
+								<div class="headerTitle">
+									普通商品<span class="carSelectNum">1</span>件
+								</div>
+								<div class="bottomGoodsContent">
+									<div class="bottomGoodsView clearContent">
+										<ul>
+											<li>
+												<a target="_blank" href="#" class="bottomGoodsImage">
+													<img src="//gfs17.gomein.net.cn/T1f8KyBXZ_1RCvBVdK_80.jpg">
+												</a>
+												<div class="grayCheckboxChose">
+													<input type="checkbox">
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="slide1">
+								<div class="checkBoxNo">
+									<input type="checkbox">
+								</div>
+							</div>
+							<div class="slide2">
+								全选
+								<a href="javascript:;">删除</a>
+							</div>
+							<div class="slide3">
+								<div class="cartSelectGood">
+									已选
+									<span class="carSelectNum">0</span>
+									件商品
+									<em class="arrowBottom"></em>
+								</div>
+								<div class="totalPrice">
+									<dl>
+										<dt> 总计（不含运费）： </dt>
+										<dd class="ffyh">￥0</dd>
+									</dl>
+								</div>
+							</div>
+							<div class="slide4">
+								<a href="#">
+									<span class="Account">
+										去结算
+										<em class="arrowRightWhite"></em>
+									</span>
+
+									<div class="btnLoading">结算中...<i></i></div>
+								</a>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 底部 -->
+			<div class="footer">
+				<div class="footBox wbox">
+					<ul class="footListZdy">
+						<li>
+							<a href="#" target="_blank">国美控股集团</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">国美管家</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">关于集团</a>
+						</li>
+					</ul>
+
+					<p>
+						本公司游戏产品适合18岁以上成年人使用&nbsp;&nbsp;违法和不良信息举报电话：021-39900132&nbsp;&nbsp;
+						<a class="interDrug" href="#" target="_blank">互联网药品信息服务资格证编号（沪）-经营性-2019-0006</a>
+					</p>
+					<p>
+						网络食品销售第三方平台提供者备案：沪网食备A0015号&nbsp;&nbsp;
+						<a class="interDrug" href="#" target="_blank">网络文化经营许可证沪网文[2017]5537-436号</a>&nbsp;&nbsp;
+						<a class="interDrug" href="#" target="_blank">增值电信业务经营许可证</a>
+					</p>
+					<p>
+						客服电话:4008113333&nbsp;&nbsp;
+						<a class="interDrug" href="#" target="_blank">沪ICP备11009419号/京ICP备 19011786号</a>&nbsp;&nbsp;
+						<a class="interDrug" href="#" target="_blank">京B2-20191290</a>&nbsp;&nbsp;
+						<a class="interDrug" href="//www.gome.com.cn/companyinfo/" target="_blank">经营执照</a>
+						&nbsp;&nbsp;<a class="interDrug" href="#" target="_blank">营业执照</a>&nbsp;&nbsp;
+						<a class="interDrug" href="#" target="_blank">出版物经营许可证</a>
+					</p>
+					<p>
+						©2000-2019&nbsp;&nbsp;国美在线电子商务有限公司版权所有&nbsp;&nbsp;
+						<a class="interDrug tw-w-ico-wrap" href="#" target="_blank">
+							<i class="tw-w-mark-icon"></i>京公网安备 11010502038379号
+						</a>
+					</p>
+					<div class="footCreait">
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+						<a class="credit" href="#" target="_blank" rel="nofollow">
+							<i></i>
+							<b>经营性网站备案信息</b>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
