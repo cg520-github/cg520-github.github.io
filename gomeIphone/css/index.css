@@ -1,0 +1,172 @@
+body {
+  background: #f2f2f2;
+  min-width: 100%;
+  color: #333;
+  margin: 0 auto;
+}
+.head {
+  width: 100%;
+  overflow: hidden;
+}
+.head .appAdvertising {
+  height: 89px;
+  position: relative;
+  z-index: 1;
+  background: yellow;
+}
+.head .appAdvertising .appBox {
+  display: flex;
+  height: 89px;
+  background: #232323;
+  padding-left: 26px;
+  box-sizing: border-box;
+  z-index: 1000;
+  position: relative;
+}
+.head .appAdvertising .appBox .appClose {
+  float: left;
+  width: 24px;
+  height: 100%;
+}
+.head .appAdvertising .appBox .appClose em {
+  margin-top: 39px;
+  float: left;
+  width: 24px ;
+  height: 24px;
+  font-style: normal;
+  font-weight: normal;
+}
+.head .appAdvertising .appBox .appClose em img {
+  display: block;
+  width: 100%;
+}
+.head .appAdvertising .appBox .content {
+  float: left;
+  width: 100%;
+}
+.head .appAdvertising .appBox .content .appLogo {
+  float: left;
+  margin: 0 12px 0 24px;
+  width: 70px;
+  height: 100%;
+}
+.head .appAdvertising .appBox .content .appLogo img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 15px;
+}
+.head .appAdvertising .appBox .content .appTitle {
+  float: left;
+  font-size: 14px;
+  width: 162px;
+  height: 100%;
+  padding: 21px 0 19px 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+.head .appAdvertising .appBox .content .appTitle p {
+  height: 26px;
+  line-height: 26px;
+  width: 162px;
+  font-size: 26px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.head .appAdvertising .appBox .content .appTitle .desc {
+  margin-top: 11px;
+  height: 23px;
+  line-height: 23px;
+  font-size: 23px;
+  color: #999;
+}
+.head .appAdvertising .appBox .content .appBtn {
+  float: right;
+  width: 25%;
+  height: 100%;
+  line-height: 89px;
+  background: #ee1955;
+  text-align: center;
+  color: #fff;
+  font-size: 28px;
+}
+.head .search {
+  position: relative;
+  height: 89px;
+}
+.head .search .searchBox {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.head .search .searchBox .header {
+  padding: 0 21px;
+  background: #fff;
+  height: 100%;
+}
+.head .search .searchBox .header .logo {
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin: 20px 2px 20px 3px;
+}
+.head .search .searchBox .header .searchInputBox {
+  height: 100%;
+  margin: 0 148px 0 75px;
+}
+.head .search .searchBox .header .searchInputBox .searchModule {
+  width: 375px;
+  height: 100%;
+  overflow: hidden;
+}
+.head .search .searchBox .header .searchInputBox .searchModule .searchBar {
+  margin-top: 14px;
+  height: 75px;
+}
+.head .search .searchBox .header .searchInputBox .searchModule .searchBar .searchSide {
+  border: none;
+  height: 60px;
+  background: #F6F6F6;
+  border-radius: 30px;
+  overflow: hidden;
+}
+.head .search .searchBox .header .searchInputBox .searchModule .searchBar .searchSide .searchBtn {
+  float: left;
+  width: 24px ;
+  height: 24px;
+  margin: 18px 17px 0 20px;
+}
+.head .search .searchBox .header .searchInputBox .searchModule .searchBar .searchSide .searchInput {
+  position: relative;
+  margin: 0 0 0 7px;
+  width: 100%;
+  height: 100%;
+  line-height: 60px;
+}
+.head .search .searchBox .header .searchInputBox .searchModule .searchBar .searchSide .searchInput input {
+  position: absolute;
+  top: 0;
+  left: 60px;
+  padding: 18px 0;
+  width: 316px;
+  height: 100%;
+  color: #999;
+  line-height: 1;
+  box-sizing: border-box;
+  background: transparent;
+}
+.head .search .searchBox .header .searchInputBox .searchModule .searchBar .searchSide .searchInput h1 {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 60px;
+  color: #999;
+  z-index: 2;
+  width: 316px;
+  height: 100%;
+  line-height: 60px;
+  font-size: 23px;
+}
