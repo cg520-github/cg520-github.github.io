@@ -1,160 +1,182 @@
 body {
   background: #f2f2f2;
-  min-width: 100%;
+  min-width: 32rem;
   color: #333;
   margin: 0 auto;
 }
 .head {
-  width: 100%;
-  overflow: hidden;
+  width: 32rem;
 }
 .head .appAdvertising {
-  height: 89px;
+  height: 4.45rem;
   position: relative;
   z-index: 1;
-  background: yellow;
 }
 .head .appAdvertising .appBox {
   display: flex;
-  height: 89px;
+  height: 4.45rem;
   background: #232323;
-  padding-left: 26px;
+  padding-left: 1.3rem;
   box-sizing: border-box;
   z-index: 1000;
   position: relative;
 }
 .head .appAdvertising .appBox .appClose {
   float: left;
-  width: 24px;
-  height: 100%;
+  width: 1.2rem;
+  height: 4.45rem;
 }
 .head .appAdvertising .appBox .appClose em {
-  margin-top: 39px;
+  margin-top: 1.95rem;
   float: left;
-  width: 24px ;
-  height: 24px;
+  width: 1.2rem;
+  height: 1.2rem;
   font-style: normal;
   font-weight: normal;
 }
 .head .appAdvertising .appBox .appClose em img {
   display: block;
-  width: 100%;
+  width: 1.2rem;
+  height: 1.2rem;
 }
 .head .appAdvertising .appBox .content {
   float: left;
-  width: 100%;
+  width: 32rem;
 }
 .head .appAdvertising .appBox .content .appLogo {
   float: left;
-  margin: 0 12px 0 24px;
-  width: 70px;
-  height: 100%;
+  margin: 0 0.6rem 0 1.2rem;
+  width: 3.5rem;
+  height: 4.45rem;
 }
 .head .appAdvertising .appBox .content .appLogo img {
-  width: 100%;
+  width: 3.5rem;
   height: auto;
   display: block;
-  margin-top: 15px;
+  margin-top: 0.75rem;
 }
 .head .appAdvertising .appBox .content .appTitle {
   float: left;
-  font-size: 14px;
-  width: 162px;
-  height: 100%;
-  padding: 21px 0 19px 0;
+  font-size: 0.7rem;
+  width: 8.1rem;
+  height: 4.45rem;
+  padding: 1.05rem 0 0.95rem 0;
   box-sizing: border-box;
   color: #fff;
 }
 .head .appAdvertising .appBox .content .appTitle p {
-  height: 26px;
-  line-height: 26px;
-  width: 162px;
-  font-size: 26px;
+  height: 1.3rem;
+  line-height: 1.3rem;
+  width: 8.1rem;
+  font-size: 1.3rem;
   white-space: nowrap;
   overflow: hidden;
 }
 .head .appAdvertising .appBox .content .appTitle .desc {
-  margin-top: 11px;
-  height: 23px;
-  line-height: 23px;
-  font-size: 23px;
+  margin-top: 0.55rem;
+  height: 1.15rem;
+  line-height: 1.15rem;
+  font-size: 1.15rem;
   color: #999;
 }
 .head .appAdvertising .appBox .content .appBtn {
   float: right;
-  width: 25%;
-  height: 100%;
-  line-height: 89px;
+  width: 8rem;
+  height: 4.45rem;
+  line-height: 4.45rem;
   background: #ee1955;
   text-align: center;
   color: #fff;
-  font-size: 28px;
+  font-size: 1.4rem;
 }
 .head .search {
   position: relative;
-  height: 89px;
 }
 .head .search .searchBox {
   position: absolute;
   left: 0;
   top: 0;
-  width: 100%;
-  height: 100%;
+  width: 32rem;
+  height: 4.45rem;
   z-index: 2;
 }
 .head .search .searchBox .header {
-  padding: 0 21px;
+  padding: 0 1.05rem;
   background: #fff;
-  height: 100%;
+  height: 4.45rem;
 }
 .head .search .searchBox .header .logo {
-  width: 48px;
-  height: 48px;
+  width: 2.4rem;
+  height: 2.4rem;
   float: left;
-  margin: 20px 2px 20px 3px;
+  margin: 1rem 0.1rem 1rem 0.15rem;
+}
+.head .search .searchBox .header .usrBar {
+  float: right;
+  height: 4.45rem;
+}
+.head .search .searchBox .header .usrBar p {
+  margin: 1.35rem 0;
+  height: 1.65rem;
+  line-height: 1.65rem;
+  font-size: 1.2rem;
+  overflow: hidden;
+}
+.head .search .searchBox .header .usrBar p a {
+  float: left;
+  color: #666;
+  font-size: 1.2rem;
+  margin-top: 0.2rem;
+}
+.head .search .searchBox .header .usrBar p .cart {
+  margin: 0.1rem 1.5rem 0 0;
+}
+.head .search .searchBox .header .usrBar p .cart img {
+  width: 1.85rem;
+  height: 1.65rem;
 }
 .head .search .searchBox .header .searchInputBox {
-  height: 100%;
-  margin: 0 148px 0 75px;
+  height: 32rem;
+  margin: 0 7.4rem 0 3.75rem;
 }
 .head .search .searchBox .header .searchInputBox .searchModule {
-  width: 375px;
-  height: 100%;
+  width: 18.75rem;
+  height: 4.45rem;
   overflow: hidden;
 }
 .head .search .searchBox .header .searchInputBox .searchModule .searchBar {
-  margin-top: 14px;
-  height: 75px;
+  margin-top: 0.7rem;
+  height: 3.75rem;
 }
 .head .search .searchBox .header .searchInputBox .searchModule .searchBar .searchSide {
   border: none;
-  height: 60px;
+  height: 3rem;
   background: #F6F6F6;
-  border-radius: 30px;
+  border-radius: 1.5rem;
   overflow: hidden;
 }
 .head .search .searchBox .header .searchInputBox .searchModule .searchBar .searchSide .searchBtn {
   float: left;
-  width: 24px ;
-  height: 24px;
-  margin: 18px 17px 0 20px;
+  width: 1.2rem;
+  height: 1.2rem;
+  margin: 0.9rem 0.85rem 0 1rem;
 }
 .head .search .searchBox .header .searchInputBox .searchModule .searchBar .searchSide .searchInput {
   position: relative;
-  margin: 0 0 0 7px;
-  width: 100%;
-  height: 100%;
-  line-height: 60px;
+  margin: 0 0 0 0.35rem;
+  width: 18.75rem;
+  height: 3rem;
+  line-height: 3rem;
 }
 .head .search .searchBox .header .searchInputBox .searchModule .searchBar .searchSide .searchInput input {
   position: absolute;
   top: 0;
-  left: 60px;
-  padding: 18px 0;
-  width: 316px;
-  height: 100%;
+  left: 3rem;
+  padding: 0.9rem 0;
+  width: 15.8rem;
+  height: 3rem;
   color: #999;
-  line-height: 1;
+  line-height: 0.05rem;
   box-sizing: border-box;
   background: transparent;
 }
@@ -162,11 +184,104 @@ body {
   display: none;
   position: absolute;
   top: 0;
-  left: 60px;
+  left: 3rem;
   color: #999;
   z-index: 2;
-  width: 316px;
-  height: 100%;
-  line-height: 60px;
-  font-size: 23px;
+  width: 15.8rem;
+  height: 3rem;
+  line-height: 3rem;
+  font-size: 1.15rem;
+}
+.head .search .banner {
+  position: relative;
+  left: 0;
+  top: 0;
+  width: 32rem;
+  height: 14.95rem;
+  z-index: 1;
+  overflow: hidden;
+}
+.head .search .banner .bannerList li {
+  width: 32rem;
+  float: left;
+}
+.containe {
+  width: 32rem;
+}
+.containe .shortcut {
+  position: relative;
+  width: 32rem;
+}
+.containe .shortcut .shortcutNav {
+  position: relative;
+  overflow: hidden;
+}
+.containe .shortcut .shortcutNav .nav {
+  background: #F2F2F2;
+  position: relative;
+  z-index: 2;
+  padding-top: 1rem;
+}
+.containe .shortcut .shortcutNav .nav li {
+  text-align: center;
+  margin-bottom: 1.1rem;
+  width: 6.4rem;
+  float: left;
+  display: block;
+}
+.containe .shortcut .shortcutNav .nav li a {
+  display: block;
+  color: #333;
+}
+.containe .shortcut .shortcutNav .nav li a .icon {
+  margin: 0 auto 0.75rem;
+  text-align: center;
+  position: relative;
+  min-height: 4.3rem;
+}
+.containe .shortcut .shortcutNav .nav li a p {
+  color: #575757;
+}
+.containe .shortcut .shortcutNav .nav li a .title {
+  font-size: 1.15rem;
+  height: 1.5rem;
+  overflow: hidden;
+  word-break: break-all;
+}
+.containe .module {
+  background: #F2F2F2;
+}
+.containe .module .main ul {
+  display: flex;
+  overflow: hidden;
+}
+.containe .module .main ul li {
+  width: 100%;
+  display: block;
+}
+.containe .module .main ul li a {
+  display: block;
+  overflow: hidden;
+  position: relative;
+}
+.containe .module .main ul li a img {
+  display: block;
+}
+.containe .giftBag {
+  background: #F2F2F2;
+  overflow: hidden;
+  position: relative;
+  margin: 1.1rem;
+}
+.containe .giftBag .main ul li:first-of-type {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.containe .giftBag .main ul li:first-of-type img {
+  border-top-left-radius: 0.3rem;
+  border-bottom-left-radius: 0.3rem;
+}
+.containe .giftBag .main ul li:last-of-type {
+  border-top-right-radius: 0.3rem;
+  border-bottom-right-radius: 0.3rem;
 }
