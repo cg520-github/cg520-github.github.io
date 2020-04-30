@@ -1,2 +1,2 @@
 # cgsingleronin.github.io
-个人博客
+仿pc端国美商城
